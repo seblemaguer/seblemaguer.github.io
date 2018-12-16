@@ -1,4 +1,4 @@
-#+TITLE: Sébastien Le Maguer - Professional webpage
+#+TITLE: Sébastien Le Maguer - Post-doctoral research fellow
 #+AUTHOR: Sébastien Le Maguer
 #+EMAIL: slemaguer@coli.uni-saarland.de
 #+OPTIONS: ':t *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline author:t c:nil
@@ -100,10 +100,6 @@
 <table style="{border-collapse:collapse;}">
   <tr>
     <td>
-      <p>
-        <b style="font-size:25pt">Dr. Sébastien Le Maguer</b><br />
-        <b style="font-size:14pt">Post-Doctoral research fellow</b>
-      </p>
       <p>
         Adapt Centre / Trinity College Dublin <br />
         Dept. of Electronic & Electrical Engineering </br />
