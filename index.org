@@ -1,0 +1,293 @@
+#+TITLE: Sébastien Le Maguer - Professional webpage
+#+AUTHOR: Sébastien Le Maguer
+#+EMAIL: slemaguer@coli.uni-saarland.de
+#+OPTIONS: ':t *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline author:t c:nil
+#+OPTIONS: creator:comment d:(not LOGBOOK) date:t e:t email:nil f:t inline:t
+#+OPTIONS: num:t p:nil pri:nil stat:t tags:t tasks:t tex:t timestamp:t
+#+OPTIONS: toc:t
+#+OPTIONS: todo:t |:t
+#+DESCRIPTION:
+#+EXCLUDE_TAGS: noexport
+#+KEYWORDS:
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+
+#+LATEX_CLASS: twentysecondcv
+#+LATEX_HEADER:
+#+LATEX_HEADER: \profilepic{images/slm.jpg} % Profile picture
+#+LATEX_HEADER:
+#+LATEX_HEADER: \cvname{Sébastien \\ Le Maguer} % Your name
+#+LATEX_HEADER: \cvjobtitle{PostDoc. Researcher} % Job title/career
+#+LATEX_HEADER:
+#+LATEX_HEADER: \cvdate{31 Janvier 1984} % Date of birth
+#+LATEX_HEADER: \cvaddress{Rosenstr. 22 \newline 66111 Saarbrücken} % Short address/location, use \newline if more than 1 line is required
+#+LATEX_HEADER: \cvnumberphone{+49 681-302-70030 \newline +49 176-444-38738} % Phone number
+#+LATEX_HEADER: \cvsite{http://www.coli.uni-saarland.de/~slemaguer/} % Personal website
+#+LATEX_HEADER: \cvmail{slemaguer@coli.uni-saarland.de} % Email address
+#+LATEX_HEADER: \cvgithub{https://github.com/seblemaguer/}
+#+LATEX_HEADER: \cvlinkedin{http://linkedin.com/in/sébastien-le-maguer-004b095}
+#+LATEX_HEADER:
+#+LATEX_HEADER: \usepackage[backend=biber,style=ieee]{biblatex}
+#+LATEX_HEADER: \AtEveryBibitem{\clearfield{editor}}    % clears notes
+#+LATEX_HEADER: \usepackage{xpatch}
+#+LATEX_HEADER:
+#+LATEX_HEADER: \usepackage[normalem]{ulem}
+#+LATEX_HEADER:
+#+LATEX_HEADER: \def\makenamesetup{%
+#+LATEX_HEADER:   \def\bibnamedelima{~}%
+#+LATEX_HEADER:   \def\bibnamedelimb{ }%
+#+LATEX_HEADER:   \def\bibnamedelimc{ }%
+#+LATEX_HEADER:   \def\bibnamedelimd{ }%
+#+LATEX_HEADER:   \def\bibnamedelimi{ }%
+#+LATEX_HEADER:   \def\bibinitperiod{.}%
+#+LATEX_HEADER:   \def\bibinitdelim{~}%
+#+LATEX_HEADER:   \def\bibinithyphendelim{.-}}
+#+LATEX_HEADER: \newcommand*{\makename}[3]{\begingroup\makenamesetup\xdef#1{#2, #3}\endgroup}
+#+LATEX_HEADER:
+#+LATEX_HEADER: \newbibmacro*{name:bold}[2]{%
+#+LATEX_HEADER:   \makename{\currname}{#1}{#2}%
+#+LATEX_HEADER:   \makename{\findname}{\lastname}{\firstname}%
+#+LATEX_HEADER:   \makename{\findinit}{\lastname}{\firstinit}%
+#+LATEX_HEADER:   \ifboolexpr{ test {\ifdefequal{\currname}{\findname}}
+#+LATEX_HEADER:             or test {\ifdefequal{\currname}{\findinit}} }{\bfseries }{}}
+#+LATEX_HEADER:
+#+LATEX_HEADER: \newcommand*{\boldname}[3]{%
+#+LATEX_HEADER:   \def\lastname{#1}%
+#+LATEX_HEADER:   \def\firstname{#2}%
+#+LATEX_HEADER:   \def\firstinit{#3}}
+#+LATEX_HEADER: \boldname{}{}{}
+#+LATEX_HEADER:
+#+LATEX_HEADER: \xpretobibmacro{name:family}{\begingroup\usebibmacro{name:bold}{#1}{#2}}{}{}
+#+LATEX_HEADER: \xpretobibmacro{name:given-family}{\begingroup\usebibmacro{name:bold}{#1}{#2}}{}{}
+#+LATEX_HEADER: \xpretobibmacro{name:family-given}{\begingroup\usebibmacro{name:bold}{#1}{#2}}{}{}
+#+LATEX_HEADER: \xpretobibmacro{name:delim}{\begingroup\normalfont}{}{}
+#+LATEX_HEADER:
+#+LATEX_HEADER: \xapptobibmacro{name:family}{\endgroup}{}{}
+#+LATEX_HEADER: \xapptobibmacro{name:given-family}{\endgroup}{}{}
+#+LATEX_HEADER: \xapptobibmacro{name:family-given}{\endgroup}{}{}
+#+LATEX_HEADER: \xapptobibmacro{name:delim}{\endgroup}{}{}
+#+LATEX_HEADER:
+#+LATEX_HEADER:
+#+LATEX_HEADER:
+#+LATEX_HEADER: \ExecuteBibliographyOptions{giveninits=true, maxnames=7,sorting=ydnt, doi=false, isbn=false, url=false}
+#+LATEX_HEADER: \DeclareNameAlias{default}{family-given/given-family}
+#+LATEX_HEADER:
+#+LATEX_HEADER: \addbibresource{publis.bib}
+#+LATEX_HEADER: \boldname{Le Maguer}{Sébastien}{S.}
+#+LATEX_HEADER:
+#+LATEX_HEADER: %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+#+HTML_DOCTYPE: xhtml-strict
+#+HTML_HTML5_FANCY:
+#+HTML_INCLUDE_SCRIPTS:
+#+HTML_INCLUDE_STYLE:
+#+HTML_LINK_HOME:
+#+HTML_LINK_UP:
+#+HTML_MATHJAX:
+
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/default.css" />
+#+HTML_HEAD: <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
+#+begin_export latex
+\aboutme{}
+\makeprofile % Print the sidebar
+#+end_export
+
+#+begin_export html
+<br />
+<div id="header">
+<table style="{border-collapse:collapse;}">
+  <tr>
+    <td>
+      <p>
+        <b style="font-size:25pt">Dr. Sébastien Le Maguer</b><br />
+        <b style="font-size:14pt">Post-Doctoral research fellow</b>
+      </p>
+      <p>
+        Adapt Centre / Trinity College Dublin <br />
+        Dept. of Electronic & Electrical Engineering </br />
+        Stack B, Custom House Quay<br />
+        Dublin 1<br />
+        Ireland
+      </p>
+      <p>
+        phone : +49-681-302-70030 <br />
+        Mail: <a href="mailto:slemaguer [at] coli [dot] uni-saarland [dot] de">slemaguer [at] coli [dot] uni-saarland [dot] de</a> <br />
+        <img src="https://image.flaticon.com/icons/svg/25/25231.svg" width="20px">
+        <a href="https://github.com/seblemaguer/">https://github.com/seblemaguer/</a>
+        <br />
+
+        <img src="https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/linkedin-512.png" width="20px"/>
+        <a href="https://www.linkedin.com/in/sébastien-le-maguer-004b095">https://www.linkedin.com/in/sébastien-le-maguer-004b095</a><br />
+
+        <img src="https://raw.githubusercontent.com/cg433n/emacs-yosemite-icon/master/emacs.iconset/icon_512x512@2x.png" width="20px"/>
+        <a href="./emacs/main.html">emacs</a> / <a href="https://github.com/seblemaguer/dotfiles">dotfiles</a><br />
+      </p>
+    </td>
+    <td style="width:200px; vertical-align:middle">
+      <img src="images/slm.jpg" width="200px" height="200px" alt="Profile picture"/>
+    </td>
+  </tr>
+</table>
+</div>
+#+end_export
+
+* Global information
+I am a postdoctoral research fellow based at Trinity College Dublin and funded by the IRC-GOIPD
+scheme. His work focuses on Speech Synthesis evaluation. Before joining ADAPT, he was a postdoctoral
+researcher at Saarland University/DFKI (Germany) where he worked on integration and evaluation of
+the influence of information density features in speech synthesis; at INRIA/IRISA in Rennes (France)
+where he worked on information retrieval with application on medical context. He did his PhD on
+parametric speech synthesis evaluation at IRISA/Université de Rennes 1. Aside these projects, I
+also have interest about speech pathology, especially stutter-speech.
+
+** Maintainer
+- Text-to-Speech synthesis system: *[[https://github.com/marytts/marytts][Marytts]]*
+- Linguistic annotation data: *[[http://roots-toolkit.gforge.inria.fr/][Roots]]*
+** Membership
+- Co-chair of [[https://synsig.org/index.php/Main_Page][SynSIG]] (chairman: Junichi Yamagishi)
+- [[http://simphon.net][SimPhon.Net network (since 10/2017)]]
+* Research
+** Current position
+| Year          | Description                   | team/group                            | Place                 | Supervisors                             |
+|---------------+-------------------------------+---------------------------------------+-----------------------+-----------------------------------------|
+| *10-18*         | Post-doctoral research fellow | Adapt Centre - Trinity College Dublin | Dublin - Ireland      | Dr. Naomi Harte                         |
+** Research experience
+| Year          | Description                   | team/group                            | Place                 | Supervisors                             |
+|---------------+-------------------------------+---------------------------------------+-----------------------+-----------------------------------------|
+| *10-18*         | Post-doctoral research fellow | Adapt Centre - Trinity College Dublin | Dublin - Ireland      | Dr. Naomi Harte                         |
+| *10/14 - 09/18* | Post-Doc                      | MSP group - Saarland University       | Saarbrücken - Germany | Dr. Ingmar Steiner                      |
+| *02/14 - 09/14* | Post-Doc                      | LINKMEDIA - INRIA                     | Rennes - France       | Dr. Vincent Claveau                     |
+| *09/13 - 12/13* | Post-Doc                      | CORDIAL - IRISA                       | Lannion - France      | Dr. Damien Lolive / Dr. Nelly Barbot    |
+| *09/11 - 08/13* | Research Assistant            | CORDIAL - IRISA                       | Lannion - France      | Pr. Olivier Boëffard / Dr. Nelly Barbot |
+| *10/08 - 07/13* | PhD                           | CORDIAL - IRISA                       | Lannion - France      | Pr. Olivier Boëffard / Dr. Nelly Barbot |
+
+#+begin_export latex
+\newpage % Start a new page
+\newgeometry{left=1cm,top=1cm,right=1cm,bottom=1cm,nohead,nofoot}
+#+end_export
+
+** PhD
+- *Title :* Experimental evaluation of statistical speech synthesis system, HTS, for French
+- *Supervisors :* Olivier Boëffard, Nelly Barbot
+- *Defended the 2nd of July 2013*
+- *Prix de l'innovation du Trégor*
+
+The work presented in this thesis is about TTS speech synthesis and, more particularly, about
+statistical speech synthesis for French. We present an analysis on the impact of the linguistic
+contextual factors on the synthesis achieved by the HTS statistical speech synthesis system. To
+conduct the experiments, two objective evaluation protocols are proposed. The first one uses
+Gaussian mixture models (GMM) to represent the acoustical space produced by HTS according to a
+contextual feature set.  By using a constant reference set of natural speech stimuli, GMM can be
+compared between themselves and consequently acoustic spaces generated by HTS.  The second objective
+evaluation that we propose is based on pairwise distances between natural speech and synthetic
+speech generated by HTS.  Results obtained by both protocols, and confirmed by subjective
+evaluations, show that using a large set of contextual factors does not necessarily improve the
+modeling and could be counter-productive on the speech quality.
+
+*Keywords :* /Computer science/, /Speech processing/, /Text-to-Speech synthesis/, /HTS/
+
+[[http://www.afcp-parole.org/doc/theses/these_SLM13.pdf][PhD document (in french)]]
+
+* COMMENT Teaching
+** Current (2017-2018)
+| Title                        | Description                                                           | Attachments  |
+|------------------------------+-----------------------------------------------------------------------+--------------|
+| Statistical speech synthesis | A brief introduction to parametrical/statistical speech synthesis     | [[file:teaching/2017-2018/PTTS_lecture/index.html][slides]] ([[file:teaching/2017-2018/PTTS_lecture/ptts_lecture.pdf][pdf]]) |
+| TTS Evaluation               | A brief overview of text to speech synthesis evaluation methodologies | [[file:teaching/2017-2018/tts_evaluation/index.html][slides]] ([[file:teaching/2017-2018/tts_evaluation/tts_evaluation.pdf][pdf]]) |
+
+** Previous
+*** 2016-2017
+| Title                               | Description                                                       | Attachments |
+|-------------------------------------+-------------------------------------------------------------------+-------------|
+| FLST                                | Presentation in front of coli students about the research group   | [[file:teaching/2016-2017/flst/slides.html][slides]]      |
+| Statistical speech synthesis        | A brief introduction to parametrical/statistical speech synthesis | [[file:teaching/2016-2017/PTTS_lecture/index.html][slides]]      |
+# | Reproducible research with org-mode | A small                                                           | [[file:teaching/2016-2017/reproducible-research/reproducible_research.html][slides]]      |
+
+*** COMMENT 2015-2016
+| Title                        | Description | Attachments        |
+|------------------------------+-------------+--------------------|
+| Statistical speech synthesis |             | [[file:teaching/2015-2016/statistical_tts/slides.pdf][slides]]        |
+
+*** COMMENT 2014-2015
+| Title                        | Description | Attachments |
+|------------------------------+-------------+-------------|
+| Statistical speech synthesis |             | [[file:teaching/2014-2015/statistical_tts/slides.pdf][slides]]      |
+*** COMMENT 2012-2013
+| Title                    | Description | Attachments |
+|--------------------------+-------------+-------------|
+| Unix Programmation       |             | (to appear) |
+| Unix Utilisation         |             | (to appear) |
+| Algorithmique distribuée |             | (to appear) |
+*** 2011-2012
+| Title                    | Description                     | Attachments                                   |
+|--------------------------+---------------------------------+-----------------------------------------------|
+| Unix Programmation       | IPC (in french)                 | [[file:teaching/2011-2012/unix_prog/cm/partie1_slides.pdf][CM1]] [[file:teaching/2011-2012/unix_prog/cm/partie2_slides.pdf][CM2]] [[file:teaching/2011-2012/unix_prog/tp/tp1_proc.pdf][TP1]] [[file:teaching/2011-2012/unix_prog/tp/tp2_sig.pdf][TP2]] [[file:teaching/2011-2012/unix_prog/tp/tp3-tubes.pdf][TP3]] [[file:teaching/2011-2012/unix_prog/tp/tp3.2_revisions.pdf][TP3.2]] [[file:teaching/2011-2012/unix_prog/tp/tp4_messages.pdf][TP4]] [[file:teaching/2011-2012/unix_prog/tp/tp6-shm-semaphore.pdf][TP5]] [[file:teaching/2011-2012/unix_prog/tp/tp6_thread.pdf][TP6]] [[file:teaching/2011-2012/unix_prog/tp/tp7-socket.pdf][TP7]] [[file:teaching/2011-2012/unix_prog/tp/tp8-socket.pdf][TP8]] |
+| Unix Utilisation         | Baseline unix tools (in french) | [[file:teaching/2011-2012/unix_utilisation/cm/support.pdf][CM]] [[file:teaching/2011-2012/unix_utilisation/tp/tp_bash_sed.pdf][TP1]] [[file:teaching/2011-2012/unix_utilisation/tp/UNIX_TP_BASHandAWK.pdf][TP2]]                                    |
+| Algorithmique distribuée | Thread/RMI in java (in french)  | [[file:teaching/2011-2012/algo_dist/cm/algodist.pdf][CM]] [[file:teaching/2011-2012/algo_dist/tp/tp_rmi_bib.pdf][TP]]                                         |
+* Education
+
+| Année       | Description                                                                           |
+|-------------+---------------------------------------------------------------------------------------|
+| *2008 - 2013* | Doctorate Degree in Computer Science, ENSSAT/Université de Rennes 1 (22, France)      |
+| *2006 - 2008* | Master of science - Complex systems and algorihms, Université de Lille 1 (59, France) |
+| *2005 - 2006* | Bachelor's Degree in computer science - A.I and robotic, U.B.O. (29, France)          |
+| *2003 - 2005* | DUT in computer science, IUT de Lannion (22, France)                                  |
+
+* Technical skills
+- *Programming* :
+  - skilled : Perl, C, C++, Java, Python, Php, Shells, Matlab
+  - fundamentals : Scheme/(E)Lisp
+- *Systems* : Linux, Windows
+- *Foreign Language* : English (Written and Spoken), German (basics), French (Native)
+
+#+begin_export latex
+\newpage
+#+end_export
+* Publications
+#+begin_export latex
+\nocite{*}
+\printbibliography[heading=none]
+#+end_export
+#+begin_export html
+<noscript><style>#bibtex { display: block; }</style></noscript>
+<table id="pubTable" class="display"></table>
+
+<link rel="stylesheet" type="text/css" href="bib-publication-list/bib-publication-list.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="lib/bib-publication-list/build/bib-list-min.js "></script>
+
+<script type="text/javascript">
+  var init = function() {
+    bibtexify("publis.bib", "pubTable");
+  };
+  if (window.addEventListener) {
+    window.addEventListener('load', init, false);
+  } else if (window.attachEvent) {
+    window.attachEvent('onload', init);
+  }
+</script>
+<script>
+  jQuery("#pubTable").on("click", "a", function(e) {
+    var $n = jQuery(this),
+    text = $n.text().toUpperCase();
+    if (text === "X") { return; }
+      try {
+        _gaq.push(['_trackEvent', "PublicationAction", text]);
+      } catch(err){ }
+        if ($n.attr("href") !== "#") {
+          setTimeout(function() {document.location.href = $n.attr("href");}, 100);
+          return false;
+      }
+  });
+</script>
+#+end_export
+# bibliography:publis.bib
+
+* COMMENT configurations
+
+# local variables:
+# org-export-html-style: ""
+# eval:(add-to-list 'org-latex-classes '("twentysecondcv" "\\documentclass{twentysecondcv}" ("\\section{%s}" . "\\section*{%s}\\n") ("\\subsection{%s}" . "\\subsection*{%s}\\n") ("\\subsubsection{%s}" . "\\subsubsection*{%s}\\n") ("\\paragraph{%s}" . "\\paragraph*{%s}") ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+# end:
