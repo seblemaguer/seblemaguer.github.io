@@ -309,9 +309,10 @@ modeling and could be counter-productive on the speech quality.
 <noscript><style>#bibtex { display: block; }</style></noscript>
 <table id="pubTable" class="display"></table>
 
-<link rel="stylesheet" type="text/css" href="bib-publication-list/bib-publication-list.css" />
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src="lib/bib-publication-list/build/bib-list-min.js "></script>
+<link rel="stylesheet" type="text/css" href="css/bib-publication-list.css" />
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="lib/bib-publication-list/lib/BibTex-0.1.2.js"></script>
+<script src="lib/bib-publication-list/build/bib-list.js "></script>
 
 <script type="text/javascript">
   var init = function() {
@@ -347,5 +348,5 @@ modeling and could be counter-productive on the speech quality.
 
 # local variables:
 # org-export-html-style: ""
-# eval:(add-to-list 'org-latex-classes '("twentysecondcv" "\\documentclass{twentysecondcv}" ("\\section{%s}" . "\\section*{%s}\\n") ("\\subsection{%s}" . "\\subsection*{%s}\\n") ("\\subsubsection{%s}" . "\\subsubsection*{%s}\\n") ("\\paragraph{%s}" . "\\paragraph*{%s}") ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+# eval: (add-to-list 'org-latex-classes '("twentysecondcv" "\\documentclass{twentysecondcv}" ("\\section{%s}" . "\\section*{%s}\\n") ("\\subsection{%s}" . "\\subsection*{%s}\\n") ("\\subsubsection{%s}" . "\\subsubsection*{%s}\\n") ("\\paragraph{%s}" . "\\paragraph*{%s}") ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
 # end:
