@@ -207,10 +207,7 @@ a[href^="http"]:after {
  *********************************************************************************************************/
 table {
     width: 100%;
-}
-
-table, th, td {
-    border: 1px solid #666;
+    boder:0px;
 }
 
 th, td {
@@ -895,6 +892,7 @@ div.figure {
 
     h1.title {
         margin-left: 5%;
+        max-width: 90%;
     }
 
     div.outline-2, #footnotes, #header {
