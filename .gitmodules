@@ -1,0 +1,3 @@
+[submodule "lib/bib-publication-list"]
+	path = lib/bib-publication-list
+	url = git@github.com:vkaravir/bib-publication-list.git
