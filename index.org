@@ -1,6 +1,6 @@
 #+TITLE: Sébastien Le Maguer - Post-doctoral research fellow
 #+AUTHOR: Sébastien Le Maguer
-#+EMAIL: slemaguer@coli.uni-saarland.de
+#+EMAIL: lemagues@tcd.ie
 #+OPTIONS: ':t *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline author:t c:nil
 #+OPTIONS: creator:comment d:(not LOGBOOK) date:t e:t email:nil f:t inline:t
 #+OPTIONS: num:t p:nil pri:nil stat:t tags:t tasks:t tex:t timestamp:t
@@ -108,8 +108,7 @@
         Ireland
       </p>
       <p>
-        phone : +49-681-302-70030 <br />
-        Mail: <a href="mailto:slemaguer [at] coli [dot] uni-saarland [dot] de">slemaguer [at] coli [dot] uni-saarland [dot] de</a> <br />
+        Mail: <a href="mailto:lemagues [at] tcd [dot] ie">lemagues [at] tcd [dot] ie</a> <br />
         <img src="https://image.flaticon.com/icons/svg/25/25231.svg" width="20px">
         <a href="https://github.com/seblemaguer/">https://github.com/seblemaguer/</a>
         <br />
