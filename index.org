@@ -12,72 +12,6 @@
 #+LANGUAGE: en
 #+SELECT_TAGS: export
 
-#+LATEX_CLASS: twentysecondcv
-#+LATEX_HEADER:
-#+LATEX_HEADER: \profilepic{images/slm.jpg} % Profile picture
-#+LATEX_HEADER:
-#+LATEX_HEADER: \cvname{Sébastien \\ Le Maguer} % Your name
-#+LATEX_HEADER: \cvjobtitle{PostDoc. Researcher} % Job title/career
-#+LATEX_HEADER:
-#+LATEX_HEADER: \cvdate{31 Janvier 1984} % Date of birth
-#+LATEX_HEADER: \cvaddress{Rosenstr. 22 \newline 66111 Saarbrücken} % Short address/location, use \newline if more than 1 line is required
-#+LATEX_HEADER: \cvnumberphone{+49 681-302-70030 \newline +49 176-444-38738} % Phone number
-#+LATEX_HEADER: \cvsite{http://www.coli.uni-saarland.de/~slemaguer/} % Personal website
-#+LATEX_HEADER: \cvmail{slemaguer@coli.uni-saarland.de} % Email address
-#+LATEX_HEADER: \cvgithub{https://github.com/seblemaguer/}
-#+LATEX_HEADER: \cvlinkedin{http://linkedin.com/in/sébastien-le-maguer-004b095}
-#+LATEX_HEADER:
-#+LATEX_HEADER: \usepackage[backend=biber,style=ieee]{biblatex}
-#+LATEX_HEADER: \AtEveryBibitem{\clearfield{editor}}    % clears notes
-#+LATEX_HEADER: \usepackage{xpatch}
-#+LATEX_HEADER:
-#+LATEX_HEADER: \usepackage[normalem]{ulem}
-#+LATEX_HEADER:
-#+LATEX_HEADER: \def\makenamesetup{%
-#+LATEX_HEADER:   \def\bibnamedelima{~}%
-#+LATEX_HEADER:   \def\bibnamedelimb{ }%
-#+LATEX_HEADER:   \def\bibnamedelimc{ }%
-#+LATEX_HEADER:   \def\bibnamedelimd{ }%
-#+LATEX_HEADER:   \def\bibnamedelimi{ }%
-#+LATEX_HEADER:   \def\bibinitperiod{.}%
-#+LATEX_HEADER:   \def\bibinitdelim{~}%
-#+LATEX_HEADER:   \def\bibinithyphendelim{.-}}
-#+LATEX_HEADER: \newcommand*{\makename}[3]{\begingroup\makenamesetup\xdef#1{#2, #3}\endgroup}
-#+LATEX_HEADER:
-#+LATEX_HEADER: \newbibmacro*{name:bold}[2]{%
-#+LATEX_HEADER:   \makename{\currname}{#1}{#2}%
-#+LATEX_HEADER:   \makename{\findname}{\lastname}{\firstname}%
-#+LATEX_HEADER:   \makename{\findinit}{\lastname}{\firstinit}%
-#+LATEX_HEADER:   \ifboolexpr{ test {\ifdefequal{\currname}{\findname}}
-#+LATEX_HEADER:             or test {\ifdefequal{\currname}{\findinit}} }{\bfseries }{}}
-#+LATEX_HEADER:
-#+LATEX_HEADER: \newcommand*{\boldname}[3]{%
-#+LATEX_HEADER:   \def\lastname{#1}%
-#+LATEX_HEADER:   \def\firstname{#2}%
-#+LATEX_HEADER:   \def\firstinit{#3}}
-#+LATEX_HEADER: \boldname{}{}{}
-#+LATEX_HEADER:
-#+LATEX_HEADER: \xpretobibmacro{name:family}{\begingroup\usebibmacro{name:bold}{#1}{#2}}{}{}
-#+LATEX_HEADER: \xpretobibmacro{name:given-family}{\begingroup\usebibmacro{name:bold}{#1}{#2}}{}{}
-#+LATEX_HEADER: \xpretobibmacro{name:family-given}{\begingroup\usebibmacro{name:bold}{#1}{#2}}{}{}
-#+LATEX_HEADER: \xpretobibmacro{name:delim}{\begingroup\normalfont}{}{}
-#+LATEX_HEADER:
-#+LATEX_HEADER: \xapptobibmacro{name:family}{\endgroup}{}{}
-#+LATEX_HEADER: \xapptobibmacro{name:given-family}{\endgroup}{}{}
-#+LATEX_HEADER: \xapptobibmacro{name:family-given}{\endgroup}{}{}
-#+LATEX_HEADER: \xapptobibmacro{name:delim}{\endgroup}{}{}
-#+LATEX_HEADER:
-#+LATEX_HEADER:
-#+LATEX_HEADER:
-#+LATEX_HEADER: \ExecuteBibliographyOptions{giveninits=true, maxnames=7,sorting=ydnt, doi=false, isbn=false, url=false}
-#+LATEX_HEADER: \DeclareNameAlias{default}{family-given/given-family}
-#+LATEX_HEADER:
-#+LATEX_HEADER: \addbibresource{publis.bib}
-#+LATEX_HEADER: \boldname{Le Maguer}{Sébastien}{S.}
-#+LATEX_HEADER:
-#+LATEX_HEADER: %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 #+HTML_DOCTYPE: xhtml-strict
 #+HTML_HTML5_FANCY:
 #+HTML_INCLUDE_SCRIPTS:
@@ -88,11 +22,6 @@
 
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/default.css" />
 #+HTML_HEAD: <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-
-#+begin_export latex
-\aboutme{}
-\makeprofile % Print the sidebar
-#+end_export
 
 #+begin_export html
 <br />
@@ -175,11 +104,6 @@ also have interest about speech pathology, especially stutter-speech.
 | *09/13 - 12/13* | Post-Doc                      | CORDIAL - IRISA                       | Lannion - France      | Dr. Damien Lolive / Dr. Nelly Barbot    |
 | *09/11 - 08/13* | Research Assistant            | CORDIAL - IRISA                       | Lannion - France      | Pr. Olivier Boëffard / Dr. Nelly Barbot |
 | *10/08 - 07/13* | PhD                           | CORDIAL - IRISA                       | Lannion - France      | Pr. Olivier Boëffard / Dr. Nelly Barbot |
-
-#+begin_export latex
-\newpage % Start a new page
-\newgeometry{left=1cm,top=1cm,right=1cm,bottom=1cm,nohead,nofoot}
-#+end_export
 
 ** PhD
 :PROPERTIES:
@@ -288,18 +212,11 @@ modeling and could be counter-productive on the speech quality.
 - *Systems* : Linux, Windows
 - *Foreign Language* : English (Written and Spoken), German (basics), French (Native)
 
-#+begin_export latex
-\newpage
-#+end_export
 * Publications
 :PROPERTIES:
 :CUSTOM_ID: sec:publications
 :END:
 
-#+begin_export latex
-\nocite{*}
-\printbibliography[heading=none]
-#+end_export
 #+begin_export html
 <noscript><style>#bibtex { display: block; }</style></noscript>
 <table id="pubTable" class="display"></table>
@@ -343,5 +260,4 @@ modeling and could be counter-productive on the speech quality.
 
 # local variables:
 # org-export-html-style: ""
-# eval: (add-to-list 'org-latex-classes '("twentysecondcv" "\\documentclass{twentysecondcv}" ("\\section{%s}" . "\\section*{%s}\\n") ("\\subsection{%s}" . "\\subsection*{%s}\\n") ("\\subsubsection{%s}" . "\\subsubsection*{%s}\\n") ("\\paragraph{%s}" . "\\paragraph*{%s}") ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
 # end:
