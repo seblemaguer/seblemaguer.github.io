@@ -199,12 +199,12 @@ modeling and could be counter-productive on the speech quality.
 :CUSTOM_ID: sec:education
 :END:
 
-| Année       | Description                                                                           |
-|-------------+---------------------------------------------------------------------------------------|
-| *2008 - 2013* | Doctorate Degree in Computer Science, ENSSAT/Université de Rennes 1 (22, France)      |
-| *2006 - 2008* | Master of science - Complex systems and algorihms, Université de Lille 1 (59, France) |
-| *2005 - 2006* | Bachelor's Degree in computer science - A.I and robotic, U.B.O. (29, France)          |
-| *2003 - 2005* | DUT in computer science, IUT de Lannion (22, France)                                  |
+| Année       | Level             | Topic                                              | Place                          |
+|-------------+-------------------+----------------------------------------------------+--------------------------------|
+| *2008 - 2013* | Doctorate Degree  | Computer science                                   | Université de Rennes 1, France |
+| *2006 - 2008* | Master of science | Computer science - Complex systems and algorihms   | Université de Lille 1, France  |
+| *2005 - 2006* | Bachelor's Degree | Computer science - A.I and robotic                 | U.B.O. (Brest), France         |
+| *2003 - 2005* | DUT               | Computer science - software design and engineering | IUT de Lannion, France         |
 
 * Technical skills
 :PROPERTIES:
