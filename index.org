@@ -69,9 +69,9 @@ I am a postdoctoral research fellow based at Trinity College Dublin and funded b
 scheme. His work focuses on Speech Synthesis evaluation. Before joining ADAPT, he was a postdoctoral
 researcher at Saarland University/DFKI (Germany) where he worked on integration and evaluation of
 the influence of information density features in speech synthesis; at INRIA/IRISA in Rennes (France)
-where he worked on information retrieval with application on medical context. He did his PhD on
-parametric speech synthesis evaluation at IRISA/Université de Rennes 1. Aside these projects, I
-also have interest about speech pathology, especially stutter-speech.
+where he worked on information retrieval with application on medical context. I did his PhD on
+parametric speech synthesis evaluation at IRISA/Université de Rennes 1. Aside these projects, I also
+have interest about speech pathology, especially stutter-speech.
 
 ** Maintainer
 :PROPERTIES:
