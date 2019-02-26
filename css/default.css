@@ -7,8 +7,6 @@
  ********************************************************************************************************/
 
 
-
-
 /*********************************************************************************************************
  ** Global HTML
  *********************************************************************************************************/
@@ -118,6 +116,9 @@ p>code, li>code {
     padding: 0.25em;
 }
 
+p {
+    text-align:justify;
+}
 
 /*********************************************************************************************************
  ** Links
@@ -217,35 +218,45 @@ tbody tr:nth-child(odd) {
     background-color: #eee;
 }
 
+
+/*********************************************************************************************************
+ ** img figure and quotes
+ *********************************************************************************************************/
 img {
     max-width: 90%;
 }
 
+figure img {
+    display: block;
+    margin: auto;
+}
+
+blockquote {
+    margin: 1em 2em;
+    padding-left: 1em;
+    border-left: 3px solid #ccc
+}
 
 /*********************************************************************************************************
- ** Notice (FIXME: what it is?)
+ ** warning, info, example
  *********************************************************************************************************/
-div.notice {
+.warning, .info, .example {
     position: relative;
     margin: 0 1.2em;
     padding: 0.25em 1em;
     border-left: 4px solid;
 }
 
-table + div.notice {
-    margin-top: 2em;
-}
-
-div.notice a {
+.warning a, .info a, .example a {
     background: transparent !important;
     border-bottom: 1px dotted;
 }
 
-div.notice a[href^="http"]:after {
+.warning a[href^="http"]:after, .info a[href^="http"]:after, .example a[href^="http"]:after {
     background: transparent !important;
 }
 
-div.notice:before {
+.warning:before, .info:before, .example:before {
     position: absolute;
     top: 0;
     right: 0;
@@ -254,46 +265,46 @@ div.notice:before {
     border-bottom-left-radius: 0.5em;
 }
 
-.notice-warning {
+.warning {
     background: #fcc;
     color: #600;
 }
 
-.notice-example {
+.example {
     background: #def;
     color: #069;
 }
 
-.notice-info {
+.info {
     background: #efe;
     color: #060;
 }
 
-.notice-warning a {
+.warning a {
     color: #600;
 }
 
-.notice-example a {
+.example a {
     color: #069;
 }
 
-.notice-info a {
+.info a {
     color: #060;
 }
 
-div.notice-warning:before {
+div.warning:before {
     content: "WARNING";
     background: #c99;
     color: #fcc;
 }
 
-div.notice-example:before {
+div.example:before {
     content: "EXAMPLE";
     background: #abc;
     color: #def;
 }
 
-div.notice-info:before {
+div.info:before {
     content: "INFO";
     background: #9c9;
     color: #efe;
@@ -512,6 +523,151 @@ span.org-rainbow-delimiters-depth-4, span.org-rainbow-delimiters-depth-8 {
     font-size: 80%
 }
 
+div.figure {
+    font-size: 0.85em;
+}
+
+.tag {
+    font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    float: right;
+    margin-top: 1em;
+    background: transparent;
+}
+
+.tag span {
+    background: #ccc;
+    padding: 0 0.5em;
+    border-radius: 0.2em;
+    color: white;
+}
+
+
+/*********************************************************************************************************
+ ** TODO part
+ *********************************************************************************************************/
+.todo, .done {
+    font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    padding: 0 0.25em;
+    border-radius: 0.2em;
+}
+
+.todo {
+    background: #f04;
+    color: white;
+}
+
+.done {
+    background: #5f7;
+    color: white;
+}
+
+/*********************************************************************************************************
+ ** Media part
+ *********************************************************************************************************/
+@media screen {
+    h1.title {
+        text-align: center;
+        margin: 1em 0 0 17%;
+        max-width: 82%;
+	background: #ddd;
+    }
+
+    h2 {
+        margin-top: 1em;
+    }
+
+    #table-of-contents {
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 2em 0 2em 2em;
+        width: 15%;
+        height: 100vh;
+        font-size: 14px;
+        background: #eee;
+        overflow: auto;
+    }
+
+    #table-of-contents ul>li>ul>li>ul>li {
+        display: none;
+    }
+
+    #table-of-contents h2 {
+        margin-top: 0;
+    }
+
+    #table-of-contents code {
+        font-size: 12px;
+    }
+
+    div.outline-2, #footnotes, #header {
+        margin-left: 17%;
+        max-width: 82%;
+    }
+
+
+    #content>p {
+        margin-left: 17%;
+        max-width: 82%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    html, body {
+        font-size: 14px;
+    }
+
+    #table-of-contents {
+        display: none;
+    }
+
+    h1.title {
+        margin-left: 5%;
+        max-width: 90%;
+    }
+
+    div.outline-2, #footnotes, #header {
+        margin-left: 5%;
+        max-width: 90%;
+    }
+}
+
+@media print {
+    body {
+        color: black;
+    }
+
+    @page {
+        margin: 25mm;
+    }
+
+    h2, h3 {
+        page-break-before: always;
+        margin-top: 0;
+    }
+
+    table {
+        page-break-inside: avoid;
+    }
+
+    a:visited {
+        color: black;
+        background: #ff8;
+    }
+
+    a[href^="http"]:visited {
+        background: #bff;
+    }
+}
+
+
+/*********************************************************************************************************
+ ** Content language information
+ *********************************************************************************************************/
+
 .org-src-container>pre.src-sh:before {
     content: "sh"
 }
@@ -545,7 +701,6 @@ span.org-rainbow-delimiters-depth-4, span.org-rainbow-delimiters-depth-8 {
     content: "Javascript"
 }
 
-/* More languages 0% http://orgmode.org/worg/org-contrib/babel/languages.html */
 
 .org-src-container>pre.src-abc:before {
     content: "ABC"
@@ -785,156 +940,4 @@ span.org-rainbow-delimiters-depth-4, span.org-rainbow-delimiters-depth-8 {
 
 .org-src-container>pre.src-rust:before {
     content: "Rust"
-}
-
-div.figure {
-    font-size: 0.85em;
-}
-
-.tag {
-    font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
-    font-size: 11px;
-    font-weight: normal;
-    float: right;
-    margin-top: 1em;
-    background: transparent;
-}
-
-.tag span {
-    background: #ccc;
-    padding: 0 0.5em;
-    border-radius: 0.2em;
-    color: white;
-}
-
-
-/*********************************************************************************************************
- ** TODO part
- *********************************************************************************************************/
-.todo, .done {
-    font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
-    font-weight: normal;
-    padding: 0 0.25em;
-    border-radius: 0.2em;
-}
-
-.todo {
-    background: #f04;
-    color: white;
-}
-
-.done {
-    background: #5f7;
-    color: white;
-}
-
-/*********************************************************************************************************
- ** Media part
- *********************************************************************************************************/
-@media screen {
-    h1.title {
-        text-align: center;
-        margin: 1em 0 0 17%;
-        max-width: 82%;
-	background: #ddd;
-    }
-
-    h2 {
-        margin-top: 1em;
-    }
-
-    #table-of-contents {
-        position: fixed;
-        top: 0;
-        left: 0;
-        padding: 2em 0 2em 2em;
-        width: 15%;
-        height: 100vh;
-        font-size: 14px;
-        background: #eee;
-        overflow: auto;
-    }
-
-    #table-of-contents ul>li>ul>li>ul>li {
-        display: none;
-    }
-
-    #table-of-contents h2 {
-        margin-top: 0;
-    }
-
-    #table-of-contents code {
-        font-size: 12px;
-    }
-
-    div.outline-2, #footnotes, #header {
-        margin-left: 17%;
-        max-width: 82%;
-    }
-
-
-    #content>p {
-        margin-left: 17%;
-        max-width: 82%;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    html, body {
-        font-size: 14px;
-    }
-
-    #table-of-contents {
-        display: none;
-    }
-
-    h1.title {
-        margin-left: 5%;
-        max-width: 90%;
-    }
-
-    div.outline-2, #footnotes, #header {
-        margin-left: 5%;
-        max-width: 90%;
-    }
-}
-
-@media print {
-    body {
-        color: black;
-    }
-
-    @page {
-        margin: 25mm;
-    }
-
-    h2, h3 {
-        page-break-before: always;
-        margin-top: 0;
-    }
-
-    table {
-        page-break-inside: avoid;
-    }
-
-    a:visited {
-        color: black;
-        background: #ff8;
-    }
-
-    a[href^="http"]:visited {
-        background: #bff;
-    }
-
-    div.notice:before {
-        display: none;
-    }
-}
-
-
-
-blockquote {
-    margin: 1em 2em;
-    padding-left: 1em;
-    border-left: 3px solid #ccc
 }
