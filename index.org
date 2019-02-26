@@ -95,14 +95,14 @@ projects, I also have interest about speech pathology, especially stutter-speech
 :END:
 | Year          | Description                   | team/group                            | Place                 | Supervisors                             |
 |---------------+-------------------------------+---------------------------------------+-----------------------+-----------------------------------------|
-| *10-18*         | Post-doctoral research fellow | Adapt Centre - Trinity College Dublin | Dublin - Ireland      | Dr. Naomi Harte                         |
+| *10/18*         | Post-doctoral research fellow | Adapt Centre - Trinity College Dublin | Dublin - Ireland      | Dr. Naomi Harte                         |
 ** Research experience
 :PROPERTIES:
 :CUSTOM_ID: sec:research-experience
 :END:
 | Year          | Description                   | team/group                            | Place                 | Supervisors                             |
 |---------------+-------------------------------+---------------------------------------+-----------------------+-----------------------------------------|
-| *10-18*         | Post-doctoral research fellow | Adapt Centre - Trinity College Dublin | Dublin - Ireland      | Dr. Naomi Harte                         |
+| *10/18*         | Post-doctoral research fellow | Adapt Centre - Trinity College Dublin | Dublin - Ireland      | Dr. Naomi Harte                         |
 | *10/14 - 09/18* | Post-Doc                      | MSP group - Saarland University       | Saarbrücken - Germany | Dr. Ingmar Steiner                      |
 | *02/14 - 09/14* | Post-Doc                      | LINKMEDIA - INRIA                     | Rennes - France       | Dr. Vincent Claveau                     |
 | *09/13 - 12/13* | Post-Doc                      | CORDIAL - IRISA                       | Lannion - France      | Dr. Damien Lolive / Dr. Nelly Barbot    |
