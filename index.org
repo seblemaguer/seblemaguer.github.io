@@ -48,6 +48,9 @@
           <img src="https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/linkedin-512.png" width="20px"/>
           <a href="https://www.linkedin.com/in/sébastien-le-maguer-004b095">https://www.linkedin.com/in/sébastien-le-maguer-004b095</a><br />
 
+          <img src="https://media.glassdoor.com/sql/526840/researchgate-squarelogo-1488811667083.png" height="20px"/>
+          <a href="https://www.researchgate.net/profile/Sebastien_Le_Maguer">https://www.researchgate.net/profile/Sebastien_Le_Maguer</a><br />
+
           <img src="https://raw.githubusercontent.com/cg433n/emacs-yosemite-icon/master/emacs.iconset/icon_512x512@2x.png" width="20px" />
           <!-- <a href="./emacs/main.html">emacs</a> / -->
           <a href="https://github.com/seblemaguer/dotfiles">dotfiles</a><br />
