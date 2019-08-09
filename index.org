@@ -65,27 +65,37 @@
 :PROPERTIES:
 :CUSTOM_ID: sec:global-information
 :END:
-I am a postdoctoral research fellow based at Trinity College Dublin and funded by the IRC-GOIPD
-scheme. My work focuses on Speech Synthesis analysis and evaluation. Before joining ADAPT, I was a
-postdoctoral researcher at Saarland University/DFKI (Germany) where I worked on integration and
-evaluation of the influence of information density features in speech synthesis; at INRIA/IRISA in
-Rennes (France) where I worked on information retrieval with application on medical context. I did
-my PhD on parametric speech synthesis evaluation at IRISA/Université de Rennes 1. Aside these
-projects, I also have interest about speech pathology, especially stutter-speech.
+I am a postdoctoral research fellow based at [[https://www.tcd.ie/][Trinity College Dublin]] in the [[https://www.adaptcentre.ie/][Adapt Centre]] and funded
+by the IRC-GOIPD scheme. I am part of the [[https://www.mee.tcd.ie/~sigmedia/][Sigmedia]] group where my work focuses on Speech Synthesis
+analysis and evaluation.
+
+Before joining the Adapt Centre, I was a postdoctoral researcher at Saarland University/DFKI
+(Germany) where I worked on integration and evaluation of the influence of information density
+features in speech synthesis; at INRIA/IRISA in Rennes (France) where I worked on information
+retrieval with application on medical context. I did my PhD on parametric speech synthesis
+evaluation at IRISA/Université de Rennes 1. Aside these projects, I also have interest about speech
+pathology, especially stutter-speech.
 
 ** Maintainer
 :PROPERTIES:
 :CUSTOM_ID: sec:maintainer
 :END:
-- Text-to-Speech synthesis system: *[[https://github.com/marytts/marytts][Marytts]]*
-- Linguistic annotation data: *[[http://roots-toolkit.gforge.inria.fr/][Roots]]*
-** Membership
+I am the maintainer of several tools but mainly:
+  - Text-to-Speech synthesis system: *[[https://github.com/marytts/marytts][Marytts]]*
+  - Linguistic annotation data: *[[http://roots-toolkit.gforge.inria.fr/][Roots]]*
+
+** Activites
 :PROPERTIES:
-:CUSTOM_ID: sec:membership
+:CUSTOM_ID: sec:activities
 :END:
-- Co-chair of [[https://synsig.org/index.php/Main_Page][SynSIG]] (chairman: Junichi Yamagishi)
+- Co-chair of [[https://synsig.org/index.php/Main_Page][SynSIG]] with Professor [[https://researchmap.jp/read0205283][Junichi Yamagishi]]
 - [[http://simphon.net][SimPhon.Net network (since 10/2017)]]
-* Research
+- Help to the organization of the [[https://synsig.org/index.php/Blizzard_Challenge][Blizzard challenge]] (2017 - )
+
+** Membership
+- Member of ISCA (2009 - )
+
+* Research career
 :PROPERTIES:
 :CUSTOM_ID: sec:research
 :END:
@@ -96,13 +106,13 @@ projects, I also have interest about speech pathology, especially stutter-speech
 | Year          | Description                   | team/group                            | Place                 | Supervisors                             |
 |---------------+-------------------------------+---------------------------------------+-----------------------+-----------------------------------------|
 | *10/18*         | Post-doctoral research fellow | Adapt Centre - Trinity College Dublin | Dublin - Ireland      | Dr. Naomi Harte                         |
-** Research experience
+
+** Past research experience
 :PROPERTIES:
 :CUSTOM_ID: sec:research-experience
 :END:
 | Year          | Description                   | team/group                            | Place                 | Supervisors                             |
 |---------------+-------------------------------+---------------------------------------+-----------------------+-----------------------------------------|
-| *10/18*         | Post-doctoral research fellow | Adapt Centre - Trinity College Dublin | Dublin - Ireland      | Dr. Naomi Harte                         |
 | *10/14 - 09/18* | Post-Doc                      | MSP group - Saarland University       | Saarbrücken - Germany | Dr. Ingmar Steiner                      |
 | *02/14 - 09/14* | Post-Doc                      | LINKMEDIA - INRIA                     | Rennes - France       | Dr. Vincent Claveau                     |
 | *09/13 - 12/13* | Post-Doc                      | CORDIAL - IRISA                       | Lannion - France      | Dr. Damien Lolive / Dr. Nelly Barbot    |
