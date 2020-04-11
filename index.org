@@ -94,6 +94,9 @@ I am the maintainer of several tools but mainly:
 - Help to the organization of the [[https://synsig.org/index.php/Blizzard_Challenge][Blizzard challenge]] (2017 - )
 
 ** Membership
+:PROPERTIES:
+:CUSTOM_ID: sec:membership
+:END:
 - Member of ISCA (2009 - )
 
 * Research career
