@@ -711,7 +711,7 @@ div.figure {
 .todo, .done {
     font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
     font-weight: normal;
-    padding: 0 0.25em;
+    padding: 0.15em 0.2em 0.0em 0.15em;
     border-radius: 0.2em;
 }
 
@@ -721,7 +721,7 @@ div.figure {
 }
 
 .done {
-    background: #5f7;
+    background: #32CD32;
     color: white;
 }
 
