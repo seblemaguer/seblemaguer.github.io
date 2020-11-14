@@ -9,11 +9,11 @@
 
 audio:not([controls]) {
     display: none;
-    height: 0
+    height: 0;
 }
 
 progress {
-    vertical-align: baseline
+    vertical-align: baseline;
 }
 
 /*********************************************************************************
@@ -153,7 +153,8 @@ h1 {
  ** Levels
  *********************************************************************************/
 
-h2, h3 {
+
+h2, h3, h4, h5 {
     font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
 }
 
@@ -161,23 +162,25 @@ h2 {
     color: #527d9a;
     border-bottom: 1px solid #527d9a;
     padding-bottom: 0.5em;
+    margin-top: 5em;
     font-size: 1.75em;
 }
 
 h3 {
-    color: #527d9a;
     margin-top: 2em;
     font-size: 1.5em;
 }
 
 h4 {
-    color: #527d9a;
     font-size: 1.25em;
 }
 
 h5 {
-    color: #527d9a;
     font-size: 1em;
+}
+
+.section-number-3, .section-number-4, .section-number-5 {
+    color: #527d9a;
 }
 
 .org-org-level-1 {
