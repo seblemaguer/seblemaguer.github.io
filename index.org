@@ -107,6 +107,7 @@ I am the maintainer of several tools but mainly:
 :PROPERTIES:
 :CUSTOM_ID: sec:current-position
 :END:
+#+ATTR_HTML: :style overflow-x:auto;
 | Year          | Description                   | team/group                            | Place                 | Supervisors                             |
 |---------------+-------------------------------+---------------------------------------+-----------------------+-----------------------------------------|
 | *10/18*         | Post-doctoral research fellow | Adapt Centre - Trinity College Dublin | Dublin - Ireland      | Dr. Naomi Harte                         |
