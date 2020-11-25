@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-04-11 Sat 14:35 -->
+<!-- 2020-11-25 Wed 11:22 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Sébastien Le Maguer  <br /><br /> Post-doctoral research fellow</title>
@@ -39,7 +39,7 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
+    overflow: auto;
     padding-top: 1.2em;
   }
   pre.src:before {
@@ -196,50 +196,26 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 <script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
 <!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
 </script>
 </head>
 <body>
@@ -251,9 +227,8 @@ for the JavaScript code in this tag.
 <ul>
 <li><a href="#sec:global-information">1. Global information</a>
 <ul>
-<li><a href="#sec:maintainer">1.1. Maintainer</a></li>
-<li><a href="#sec:activities">1.2. Activites</a></li>
-<li><a href="#sec:membership">1.3. Membership</a></li>
+<li><a href="#sec:activities">1.1. Activites</a></li>
+<li><a href="#sec:membership">1.2. Membership</a></li>
 </ul>
 </li>
 <li><a href="#sec:research">2. Research career</a>
@@ -305,40 +280,29 @@ for the JavaScript code in this tag.
   </table>
 </div>
 
-<div id="outline-container-orga250690" class="outline-2">
+<div id="outline-container-sec:global-information" class="outline-2">
 <h2 id="sec:global-information"><span class="section-number-2">1</span> Global information</h2>
 <div class="outline-text-2" id="text-sec:global-information">
 <p>
-I am a postdoctoral research fellow based at <a href="https://www.tcd.ie/">Trinity College Dublin</a> in the <a href="https://www.adaptcentre.ie/">Adapt Centre</a> and funded
-by the IRC-GOIPD scheme. I am part of the <a href="https://www.mee.tcd.ie/~sigmedia/">Sigmedia</a> group where my work focuses on Speech Synthesis
-analysis and evaluation.
+I am currently a Research Fellow in the <a href="https://www.mee.tcd.ie/~sigmedia/">SIGMEDIA</a> at the <a href="https://www.tcd.ie/">Trinity College Dublin (TCD)</a> in the <a href="https://www.adaptcentre.ie/">ADAPT Centre</a>.
+I am currently funded by the GOIPD scheme from the <a href="http://research.ie/">Irish Research Council (IRC)</a>.
 </p>
 
 <p>
-Before joining the Adapt Centre, I was a postdoctoral researcher at Saarland University/DFKI
-(Germany) where I worked on integration and evaluation of the influence of information density
-features in speech synthesis; at INRIA/IRISA in Rennes (France) where I worked on information
-retrieval with application on medical context. I did my PhD on parametric speech synthesis
-evaluation at IRISA/Université de Rennes 1. Aside these projects, I also have interest about speech
-pathology, especially stutter-speech.
+My research is centred around a fundamental question: what is natural speech?
+To conduct my research, I am currently focusing my work around two axes:
+speech synthesis evaluation/analysis and analyzing stuttering speech.
 </p>
-</div>
 
-<div id="outline-container-org342f1c2" class="outline-3">
-<h3 id="sec:maintainer"><span class="section-number-3">1.1</span> Maintainer</h3>
-<div class="outline-text-3" id="text-sec:maintainer">
 <p>
-I am the maintainer of several tools but mainly:
+In the past, I was a postdoctoral researcher at Saarland University/DFKI (Germany) where I worked on integration and evaluation of the influence of information density features in speech synthesis;
+at INRIA/IRISA in Rennes (France) where I worked on information retrieval with an application on medical context.
+I did my PhD on parametric speech synthesis evaluation at IRISA/Université de Rennes 1.
 </p>
-<ul class="org-ul">
-<li>Text-to-Speech synthesis system: <b><a href="https://github.com/marytts/marytts">Marytts</a></b></li>
-<li>Linguistic annotation data: <b><a href="http://roots-toolkit.gforge.inria.fr/">Roots</a></b></li>
-</ul>
-</div>
 </div>
 
-<div id="outline-container-org8a781e1" class="outline-3">
-<h3 id="sec:activities"><span class="section-number-3">1.2</span> Activites</h3>
+<div id="outline-container-sec:activities" class="outline-3">
+<h3 id="sec:activities"><span class="section-number-3">1.1</span> Activites</h3>
 <div class="outline-text-3" id="text-sec:activities">
 <ul class="org-ul">
 <li>Co-chair of <a href="https://synsig.org/index.php/Main_Page">SynSIG</a> with Professor <a href="https://researchmap.jp/read0205283">Junichi Yamagishi</a></li>
@@ -348,8 +312,8 @@ I am the maintainer of several tools but mainly:
 </div>
 </div>
 
-<div id="outline-container-org727f59a" class="outline-3">
-<h3 id="sec:membership"><span class="section-number-3">1.3</span> Membership</h3>
+<div id="outline-container-sec:membership" class="outline-3">
+<h3 id="sec:membership"><span class="section-number-3">1.2</span> Membership</h3>
 <div class="outline-text-3" id="text-sec:membership">
 <ul class="org-ul">
 <li>Member of ISCA (2009 - )</li>
@@ -358,11 +322,11 @@ I am the maintainer of several tools but mainly:
 </div>
 </div>
 
-<div id="outline-container-org5a9f796" class="outline-2">
+<div id="outline-container-sec:research" class="outline-2">
 <h2 id="sec:research"><span class="section-number-2">2</span> Research career</h2>
 <div class="outline-text-2" id="text-sec:research">
 </div>
-<div id="outline-container-orgc66adfd" class="outline-3">
+<div id="outline-container-sec:current-position" class="outline-3">
 <h3 id="sec:current-position"><span class="section-number-3">2.1</span> Current position</h3>
 <div class="outline-text-3" id="text-sec:current-position">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
@@ -385,23 +349,23 @@ I am the maintainer of several tools but mainly:
 <th scope="col" class="org-left">Description</th>
 <th scope="col" class="org-left">team/group</th>
 <th scope="col" class="org-left">Place</th>
-<th scope="col" class="org-left">Supervisors</th>
+<th scope="col" class="org-left">Supervisor</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="org-left"><b>10/18</b></td>
 <td class="org-left">Post-doctoral research fellow</td>
-<td class="org-left">Adapt Centre - Trinity College Dublin</td>
+<td class="org-left">ADAPT Centre - Trinity College Dublin</td>
 <td class="org-left">Dublin - Ireland</td>
-<td class="org-left">Dr. Naomi Harte</td>
+<td class="org-left">Prof. Naomi Harte</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 
-<div id="outline-container-org39dad76" class="outline-3">
+<div id="outline-container-sec:research-experience" class="outline-3">
 <h3 id="sec:research-experience"><span class="section-number-3">2.2</span> Past research experience</h3>
 <div class="outline-text-3" id="text-sec:research-experience">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
@@ -424,7 +388,7 @@ I am the maintainer of several tools but mainly:
 <th scope="col" class="org-left">Description</th>
 <th scope="col" class="org-left">team/group</th>
 <th scope="col" class="org-left">Place</th>
-<th scope="col" class="org-left">Supervisors</th>
+<th scope="col" class="org-left">Supervisor(s)</th>
 </tr>
 </thead>
 <tbody>
@@ -457,7 +421,7 @@ I am the maintainer of several tools but mainly:
 <td class="org-left">Research Assistant</td>
 <td class="org-left">CORDIAL - IRISA</td>
 <td class="org-left">Lannion - France</td>
-<td class="org-left">Pr. Olivier Boëffard / Dr. Nelly Barbot</td>
+<td class="org-left">Prof. Olivier Boëffard / Dr. Nelly Barbot</td>
 </tr>
 
 <tr>
@@ -465,14 +429,14 @@ I am the maintainer of several tools but mainly:
 <td class="org-left">PhD</td>
 <td class="org-left">CORDIAL - IRISA</td>
 <td class="org-left">Lannion - France</td>
-<td class="org-left">Pr. Olivier Boëffard / Dr. Nelly Barbot</td>
+<td class="org-left">Prof. Olivier Boëffard / Dr. Nelly Barbot</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 
-<div id="outline-container-orgf70fe4e" class="outline-3">
+<div id="outline-container-sec:phd" class="outline-3">
 <h3 id="sec:phd"><span class="section-number-3">2.3</span> PhD</h3>
 <div class="outline-text-3" id="text-sec:phd">
 <ul class="org-ul">
@@ -507,7 +471,7 @@ modeling and could be counter-productive on the speech quality.
 </div>
 </div>
 
-<div id="outline-container-org7b843b6" class="outline-2">
+<div id="outline-container-sec:education" class="outline-2">
 <h2 id="sec:education"><span class="section-number-2">3</span> Education</h2>
 <div class="outline-text-2" id="text-sec:education">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
@@ -563,7 +527,7 @@ modeling and could be counter-productive on the speech quality.
 </div>
 </div>
 
-<div id="outline-container-orgac8db5b" class="outline-2">
+<div id="outline-container-sec:technical-skills" class="outline-2">
 <h2 id="sec:technical-skills"><span class="section-number-2">4</span> Technical skills</h2>
 <div class="outline-text-2" id="text-sec:technical-skills">
 <ul class="org-ul">
@@ -578,7 +542,7 @@ modeling and could be counter-productive on the speech quality.
 </div>
 </div>
 
-<div id="outline-container-org6d981b3" class="outline-2">
+<div id="outline-container-sec:publications" class="outline-2">
 <h2 id="sec:publications"><span class="section-number-2">5</span> Publications</h2>
 <div class="outline-text-2" id="text-sec:publications">
 <noscript><style>#bibtex { display: block; }</style></noscript>
@@ -618,9 +582,9 @@ modeling and could be counter-productive on the speech quality.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Sébastien Le Maguer</p>
-<p class="date">Created: 2020-04-11 Sat 14:35</p>
-<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 26.3 (<a href="https://orgmode.org">Org</a> mode 9.3.6)</p>
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="date">Created: 2020-11-25 Wed 11:22</p>
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 27.1 (<a href="https://orgmode.org">Org</a> mode 9.4)</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>
