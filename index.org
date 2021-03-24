@@ -1,4 +1,4 @@
-#+TITLE: Sébastien Le Maguer @@html: <br /><br />@@ Post-doctoral research fellow
+#+TITLE: Sébastien Le Maguer - Research fellow
 #+AUTHOR: Sébastien Le Maguer
 #+EMAIL: lemagues@tcd.ie
 #+OPTIONS: ':t *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline author:t c:nil
