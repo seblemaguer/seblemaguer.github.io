@@ -100,9 +100,9 @@ I did my PhD on parametric speech synthesis evaluation at IRISA/Université de R
 :CUSTOM_ID: sec:current-position
 :END:
 #+ATTR_HTML: :style overflow-x:auto;
-| Year  | Description                   | team/group                            | Place            | Supervisor        |
-|-------+-------------------------------+---------------------------------------+------------------+-------------------|
-| *10/18* | Post-doctoral research fellow | ADAPT Centre - Trinity College Dublin | Dublin - Ireland | Prof. Naomi Harte |
+| Year  | Description     | team/group                            | Place            | Supervisor        |
+|-------+-----------------+---------------------------------------+------------------+-------------------|
+| *10/18* | Research fellow | ADAPT Centre - Trinity College Dublin | Dublin - Ireland | Prof. Naomi Harte |
 
 ** Past research experience
 :PROPERTIES:
@@ -213,15 +213,6 @@ modeling and could be counter-productive on the speech quality.
 | *2005 - 2006* | Bachelor's Degree | Computer science - A.I and robotic                 | U.B.O. (Brest), France         |
 | *2003 - 2005* | DUT               | Computer science - software design and engineering | IUT de Lannion, France         |
 
-* Technical skills
-:PROPERTIES:
-:CUSTOM_ID: sec:technical-skills
-:END:
-- *Programming* :
-  - skilled : Perl, C, C++, Java, Python, Php, Shells, Matlab
-  - fundamentals : Scheme/(E)Lisp
-- *Systems* : Linux, Windows
-- *Foreign Language* : English (Written and Spoken), German (basics), French (Native)
 
 * Publications
 :PROPERTIES:
