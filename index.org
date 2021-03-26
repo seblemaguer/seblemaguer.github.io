@@ -201,6 +201,7 @@ modeling and could be counter-productive on the speech quality.
 | Unix Programmation       | IPC (in french)                 | [[file:teaching/2011-2012/unix_prog/cm/partie1_slides.pdf][CM1]] [[file:teaching/2011-2012/unix_prog/cm/partie2_slides.pdf][CM2]] [[file:teaching/2011-2012/unix_prog/tp/tp1_proc.pdf][TP1]] [[file:teaching/2011-2012/unix_prog/tp/tp2_sig.pdf][TP2]] [[file:teaching/2011-2012/unix_prog/tp/tp3-tubes.pdf][TP3]] [[file:teaching/2011-2012/unix_prog/tp/tp3.2_revisions.pdf][TP3.2]] [[file:teaching/2011-2012/unix_prog/tp/tp4_messages.pdf][TP4]] [[file:teaching/2011-2012/unix_prog/tp/tp6-shm-semaphore.pdf][TP5]] [[file:teaching/2011-2012/unix_prog/tp/tp6_thread.pdf][TP6]] [[file:teaching/2011-2012/unix_prog/tp/tp7-socket.pdf][TP7]] [[file:teaching/2011-2012/unix_prog/tp/tp8-socket.pdf][TP8]] |
 | Unix Utilisation         | Baseline unix tools (in french) | [[file:teaching/2011-2012/unix_utilisation/cm/support.pdf][CM]] [[file:teaching/2011-2012/unix_utilisation/tp/tp_bash_sed.pdf][TP1]] [[file:teaching/2011-2012/unix_utilisation/tp/UNIX_TP_BASHandAWK.pdf][TP2]]                                    |
 | Algorithmique distribuée | Thread/RMI in java (in french)  | [[file:teaching/2011-2012/algo_dist/cm/algodist.pdf][CM]] [[file:teaching/2011-2012/algo_dist/tp/tp_rmi_bib.pdf][TP]]                                         |
+
 * Education
 :PROPERTIES:
 :CUSTOM_ID: sec:education
@@ -213,6 +214,11 @@ modeling and could be counter-productive on the speech quality.
 | *2005 - 2006* | Bachelor's Degree | Computer science - A.I and robotic                 | U.B.O. (Brest), France         |
 | *2003 - 2005* | DUT               | Computer science - software design and engineering | IUT de Lannion, France         |
 
+* Public Engagement
+:PROPERTIES:
+:CUSTOM_ID: sec:education
+:END:
+- [[https://podtail.com/podcast/adapt-radio/sebastien-le-maguer-pronunciation-and-accents-in-h/][ADAPT Radio (2019) - Overview of my research]]
 
 * Publications
 :PROPERTIES:
