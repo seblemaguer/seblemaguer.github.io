@@ -398,8 +398,21 @@ table {
   overflow-x: auto;
 }
 
-th,
+table thead th {
+  padding: 3px 18px 3px 10px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  font-weight: bold;
+  cursor: pointer;
+  cursor: hand;
+}
+
+table tbody {
+  border-bottom: 1px solid black;
+}
+
 td {
+  padding: 3px 10px;
   padding: 0.5em;
   text-align: left;
 }
@@ -536,6 +549,7 @@ body {
 }
 
 h2 {
+  margin-top: 2em;
   line-height: 1.62em;
 }
 
@@ -560,6 +574,7 @@ h5,
 h6 {
   font-family: "Source Sans Pro", sans-serif;
   color: #222;
+  margin-top: 2em;
 }
 
 .section-number-1,
@@ -588,8 +603,8 @@ pre {
 }
 
 #table-of-contents a {
-    color: #000;
-    text-decoration: none;
+  color: #000;
+  text-decoration: none;
 }
 
 #text-table-of-contents ul {
