@@ -1,0 +1,741 @@
+/********************************************************************************************************
+ **                                                                                                    **
+ ** My own CSS which is a result of a merge between the following main sources:                        **
+ **   - https://github.com/thi-ng/org-spec                                                             **
+ **   - https://github.com/gongzhitaao/orgcss                                                          **
+ **   - http://doc.norang.ca/org-mode.html                                                             **
+ **   - https://taopeng.me/org-notes-style/                                                            **
+ **                                                                                                    **
+ ********************************************************************************************************/
+
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/static/css/notes.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* use normalize.css instead of reset
+   http://stackoverflow.com/a/8357635/114833 */
+/* @import "compass/reset"; */
+@import "https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Source+Code+Pro|Source+Sans+Pro:700,700i";
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html,
+button,
+input,
+select,
+textarea {
+  color: #484c66;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 90%;
+  line-height: 1.4em;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -hp-pre-wrap;
+  word-wrap: break-word;
+  text-decoration: none;
+  color: #527d9a;
+}
+a:hover {
+  color: #ea4c89;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #ea4c89;
+  color: #fff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #ea4c89;
+  color: #fff;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px dashed #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.todo,
+.done,
+.tag {
+  /* font-family: "Source Pro", Monaco, "Courier New", monospace; */
+  padding: 0 0.3em;
+  background-color: #eee;
+  border: 1px solid #ccc;
+}
+
+.todo {
+  color: #dd4433;
+}
+
+.done {
+  color: #44934b;
+}
+
+.tag {
+  font-size: 80%;
+  font-weight: normal;
+  margin: 0 0.3em;
+  display: none;
+}
+
+.timestamp {
+  color: #bebebe;
+}
+
+.timestamp-kwd {
+  color: #5f9ea0;
+}
+
+.right {
+  margin-left: auto;
+  margin-right: 0px;
+  text-align: right;
+}
+
+.left {
+  margin-left: 0px;
+  margin-right: auto;
+  text-align: left;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+#postamble p,
+#preamble p {
+  font-size: 90%;
+  margin: 0.2em;
+}
+
+/*********************************************************************************
+ ** Source code
+ *********************************************************************************/
+
+pre {
+  border: 0;
+  box-shadow: 5px 8px 8px #9d9d9d;
+}
+
+/* pre.example:before { */
+/*     content: "Properties"; */
+/*     display: block; */
+/*     border-bottom: 1px dotted; */
+/*     margin-bottom: 1em; */
+/* } */
+
+pre.example {
+  overflow: auto;
+  display: block;
+  margin: 5px 5px 5px 5px;
+  padding-left: 1%;
+  border-left: 5px solid #5f9ea0;
+}
+
+pre {
+  background-color: #f8f8f8;
+}
+
+pre.src {
+  padding-left: 1%;
+  margin: 5px 5px 5px 5px;
+  border-left: 5px solid #527d9a;
+}
+
+pre.src:before {
+  display: block;
+  position: absolute;
+  background-color: #ccccd0;
+  top: 0;
+  right: 0;
+  padding: 0.25em 0.5em;
+  border-bottom-left-radius: 8px;
+  border: 0;
+  color: white;
+}
+
+pre.src-plantuml:before {
+  content: "UML";
+}
+
+pre.src-javascript:before {
+  content: "JS";
+}
+
+pre.src-clojure:before {
+  content: "CLJ";
+}
+
+pre.src-c:before {
+  content: "C";
+}
+
+span.org-string {
+  color: #f94;
+}
+
+span.org-keyword {
+  color: #c07;
+}
+
+span.org-variable-name {
+  color: #f04;
+}
+
+span.org-clojure-keyword {
+  color: #09f;
+}
+
+span.org-comment,
+span.org-comment-delimiter {
+  color: #999;
+}
+
+span.org-rainbow-delimiters-depth-1,
+span.org-rainbow-delimiters-depth-5 {
+  color: #666;
+}
+
+span.org-rainbow-delimiters-depth-2,
+span.org-rainbow-delimiters-depth-6 {
+  color: #888;
+}
+
+span.org-rainbow-delimiters-depth-3,
+span.org-rainbow-delimiters-depth-7 {
+  color: #aaa;
+}
+
+span.org-rainbow-delimiters-depth-4,
+span.org-rainbow-delimiters-depth-8 {
+  color: #ccc;
+}
+
+:not(pre) > code {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background-clip: padding-box;
+  color: #333;
+}
+
+.org-src-container {
+  box-shadow: 5px #eee;
+  position: relative;
+}
+
+.org-src-container > pre {
+  overflow: auto;
+}
+
+.org-src-container > pre:before {
+  display: block;
+  position: absolute;
+  background-color: #b3b3b3;
+  top: 0;
+  right: 0;
+  padding: 0 0.5em;
+  border-bottom-left-radius: 8px;
+  border: 0;
+  color: #fff;
+  font-size: 80%;
+}
+
+div.figure {
+  font-size: 0.85em;
+}
+
+.tag {
+  font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: normal;
+  float: right;
+  margin-top: 1em;
+  background: transparent;
+}
+
+.tag span {
+  background: #ccc;
+  padding: 0 0.5em;
+  border-radius: 0.2em;
+  color: white;
+}
+
+/*********************************************************************************
+ ** List
+ *********************************************************************************/
+
+li {
+  margin: 0.3em 0;
+}
+
+dl {
+  display: flex;
+  flex-wrap: wrap;
+  border: 3px double #ccc;
+  padding: 0.5em;
+  width: 100%;
+  max-width: 1024px;
+}
+
+dl > * {
+  padding-top: 0.5em;
+}
+
+dt {
+  width: 25%;
+  font-weight: bold;
+  /* text-align:right; */
+  font-weight: bold;
+  color: #527d9a;
+}
+
+dt::after {
+  content: ":";
+}
+
+dd {
+  width: 75%;
+  margin-left: 0px;
+}
+
+dd + dd {
+  width: 100%;
+  padding-left: calc(30% + 1em);
+}
+
+dt + dt {
+  padding-right: 60%;
+}
+
+dt + dt + dd {
+  margin-top: -1.625em; /* own height including padding */
+  padding-left: calc(30% + 1em);
+}
+
+/*********************************************************************************
+ ** Table
+ *********************************************************************************/
+table {
+  border-collapse: collapse;
+  /* display: block; */
+  width: 100%;
+  overflow-x: auto;
+}
+
+th,
+td {
+  padding: 0.5em;
+  text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #eee;
+}
+
+th.right {
+  text-align: center;
+}
+
+th.left {
+  text-align: center;
+}
+
+th.center {
+  text-align: center;
+}
+
+td.right {
+  text-align: right;
+}
+
+td.left {
+  text-align: left;
+}
+
+td.center {
+  text-align: center;
+}
+
+dt {
+  font-weight: bold;
+}
+
+#footnotes {
+  border-top: 5px solid #ea4c89;
+  margin-bottom: 5em;
+}
+#footnotes h2 {
+  display: none;
+}
+
+#text-footnotes {
+  margin-top: 1em;
+}
+
+.footpara:nth-child(2) {
+  display: inline;
+}
+
+.footpara {
+  display: block;
+}
+
+.footdef sup:before {
+  content: "[";
+}
+.footdef sup:after {
+  content: "]";
+}
+.footdef p {
+  display: inline;
+}
+
+figure {
+  margin: 0;
+}
+figure img {
+  max-width: 100%;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.inlinetask {
+  padding: 10px;
+  border: 2px solid gray;
+  margin: 10px;
+  background: #ffffcc;
+}
+
+#org-div-home-and-up {
+  text-align: right;
+  font-size: 70%;
+  white-space: nowrap;
+}
+
+textarea {
+  overflow-x: auto;
+}
+
+.linenr {
+  font-size: smaller;
+}
+
+.code-highlighted {
+  background-color: #ffff00;
+}
+
+.org-info-js_info-navigation {
+  border-style: none;
+}
+
+#org-info-js_console-label {
+  font-size: 10px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.org-info-js_search-highlight {
+  background-color: #ffff00;
+  color: #000000;
+  font-weight: bold;
+}
+
+p.verse,
+blockquote {
+  margin: 0;
+  padding: 0;
+  padding-left: 3%;
+  border-left: 5px solid #ea4c89;
+}
+
+body {
+  font-family: Lora, Palatino, Georgia, serif;
+  width: 92%;
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+}
+
+h2 {
+  line-height: 1.62em;
+}
+
+.title {
+  margin: 0 0 2em 0;
+  line-height: 2em;
+  border-bottom: 5px solid #527d9a;
+  text-align: center;
+}
+
+#postamble {
+  font-size: 80%;
+  line-height: 1.4em;
+  text-align: right;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #222;
+}
+
+.section-number-1,
+.section-number-2,
+.section-number-3,
+.section-number-4,
+.section-number-5 {
+  color: #527d9a;
+}
+
+.outline-2 {
+  margin-bottom: 4em;
+}
+.outline-2 h2 {
+  border-bottom: 1px solid #ccc;
+}
+
+.outline-text-2 code,
+pre {
+  background-color: #eee;
+}
+
+#table-of-contents {
+  display: none;
+  margin-left: 0.5em;
+}
+
+#table-of-contents a {
+    color: #000;
+    text-decoration: none;
+}
+
+#text-table-of-contents ul {
+  padding-left: 1em;
+}
+#text-table-of-contents li {
+  list-style-type: none;
+  margin: 0.4em 0;
+}
+#text-table-of-contents ul ul {
+  margin: 0;
+}
+#text-table-of-contents li li {
+  font-weight: normal;
+  font-size: 90%;
+  margin: 0;
+}
+
+#table-of-contents div > ul > li {
+  margin-top: 1em;
+  font-weight: bold;
+}
+#table-of-contents h2 {
+  text-align: center;
+  margin: -0.5em -1em 0.5em -1em;
+  border-bottom: 0;
+}
+
+#content {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+@media print,
+  (-o-min-device-pixel-ratio: 5 / 4),
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+     * Don't show links for images, or javascript/internal links
+     */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    /* border: 1px solid #999; */
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  #table-of-contents {
+    display: block;
+    width: initial;
+    border: none;
+  }
+  #table-of-contents a {
+    text-decoration: none;
+  }
+}
+/* large screen */
+@media screen and (min-width: 40rem) {
+  html {
+    font-size: 100%;
+  }
+
+  #table-of-contents {
+    display: block;
+    padding: 1em;
+    width: 32%;
+    min-width: 18em;
+    float: right;
+    background-color: #ddd;
+    position: relative;
+    /* required by z-index */
+    z-index: 5000;
+    border: 2px solid #aaa;
+  }
+
+  .tag {
+    display: initial;
+  }
+}
