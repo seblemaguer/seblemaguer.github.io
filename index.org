@@ -6,11 +6,11 @@
 #+OPTIONS: num:t p:nil pri:nil stat:t tags:t tasks:t tex:t timestamp:t
 #+OPTIONS: toc:t
 #+OPTIONS: todo:t |:t
-#+OPTIONS: html-style:nil html5-fancy:t
 #+SELECT_TAGS: export
 #+EXCLUDE_TAGS: noexport
 
 # Exporting to HTML5
+#+OPTIONS: html-style:nil html5-fancy:t
 #+HTML_DOCTYPE: html5
 #+HTML_HEAD: <meta http-equiv="X-UA-Compatible" content="IE=edge">
 #+HTML_HEAD: <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,6 +20,7 @@
 #+HTML_HEAD: <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js/src/bibtex_js.js"></script>
 #+HTML_HEAD: <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 #+HTML_HEAD: <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+#+HTML_HEAD: <script src="lib/custom_biblio.js"></script>
 
 # Styles
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/main.css" />

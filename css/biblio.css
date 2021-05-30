@@ -1,28 +1,7 @@
 /* Bibtex navigation bar */
-.bib_navigation_bar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #AAA;
-}
-
-.bib_navigation_bar ul li {
-    float: left;
-}
-
-.bib_navigation_bar ul li a {
-    display: block;
-    color: white;
+.bibtex_search_bar {
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
 }
-
-.bib_navigation_bar ul li a:hover {
-    background-color: #111;
-}
-
 
 /* Bibtex item */
 .bibtexentry {
