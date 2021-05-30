@@ -15,10 +15,18 @@
 #+HTML_HEAD: <meta http-equiv="X-UA-Compatible" content="IE=edge">
 #+HTML_HEAD: <meta name="viewport" content="width=device-width, initial-scale=1">
 
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/main.css" />
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/bib-publication-list.css" />
-#+HTML_HEAD: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+# Scripts
 #+HTML_HEAD: <script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+#+HTML_HEAD: <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js/src/bibtex_js.js"></script>
+#+HTML_HEAD: <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+#+HTML_HEAD: <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+# Styles
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/main.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/biblio.css" />
+#+HTML_HEAD: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+#+HTML_HEAD: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 [[./images/slm.jpg]]
 
@@ -211,41 +219,7 @@ modeling and could be counter-productive on the speech quality.
 :CUSTOM_ID: sec:publications
 :END:
 
-#+begin_export html
-<noscript><style>#bibtex { display: block; }</style></noscript>
-<table id="pubTable" class="display"></table>
-
-<link rel="stylesheet" type="text/css" href="css/bib-publication-list.css" />
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="lib/bib-publication-list/lib/BibTex-0.1.2.js"></script>
-<script src="lib/bib-publication-list/build/bib-list.js "></script>
-
-<script type="text/javascript">
-  var init = function() {
-    bibtexify("publis.bib", "pubTable");
-  };
-  if (window.addEventListener) {
-    window.addEventListener('load', init, false);
-  } else if (window.attachEvent) {
-    window.attachEvent('onload', init);
-  }
-</script>
-<script>
-  jQuery("#pubTable").on("click", "a", function(e) {
-    var $n = jQuery(this),
-    text = $n.text().toUpperCase();
-    if (text === "X") { return; }
-      try {
-        _gaq.push(['_trackEvent', "PublicationAction", text]);
-      } catch(err){ }
-        if ($n.attr("href") !== "#") {
-          setTimeout(function() {document.location.href = $n.attr("href");}, 100);
-          return false;
-      }
-  });
-</script>
-#+end_export
-# bibliography:publis.bib
+#+INCLUDE: "templates/publis.html" export html
 
 * COMMENT configurations
 :PROPERTIES:

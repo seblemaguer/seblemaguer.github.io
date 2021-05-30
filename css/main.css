@@ -50,17 +50,18 @@ html {
 }
 
 a {
-  white-space: pre;
-  white-space: pre-wrap;
-  white-space: pre-line;
-  white-space: -pre-wrap;
-  white-space: -o-pre-wrap;
-  white-space: -moz-pre-wrap;
-  white-space: -hp-pre-wrap;
-  word-wrap: break-word;
+  /* white-space: pre; */
+  /* white-space: pre-wrap; */
+  /* white-space: pre-line; */
+  /* white-space: -pre-wrap; */
+  /* white-space: -o-pre-wrap; */
+  /* white-space: -moz-pre-wrap; */
+  /* white-space: -hp-pre-wrap; */
+  /* word-wrap: break-word; */
   text-decoration: none;
   color: #527d9a;
 }
+
 a:hover {
   color: #ea4c89;
 }
@@ -553,7 +554,7 @@ h2 {
   line-height: 1.62em;
 }
 
-.title {
+h1 {
   margin: 0 0 2em 0;
   line-height: 2em;
   border-bottom: 5px solid #527d9a;
