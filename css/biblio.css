@@ -9,6 +9,11 @@
     margin-bottom: 02em;
 }
 
-.url {
-    background: url('https://api.iconify.design/il:url.svg') no-repeat center center / contain;
+.iconify {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.modal{
+    max-width: 90%;
 }
