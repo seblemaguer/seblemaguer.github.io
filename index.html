@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2021-05-30 Sun 10:13 -->
+<!-- 2021-05-30 Sun 12:06 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Sébastien Le Maguer - Research fellow</title>
@@ -13,6 +13,7 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js/src/bibtex_js.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<script src="lib/custom_biblio.js"></script>
 <link rel="stylesheet" type="text/css" href="css/main.css" />
 <link rel="stylesheet" type="text/css" href="css/biblio.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
@@ -46,7 +47,7 @@
 </div>
 </nav>
 
-<figure id="org8c5f576">
+<figure id="org3468b8e">
 <img src="./images/slm.jpg" alt="slm.jpg">
 
 </figure>
@@ -337,7 +338,9 @@ modeling and could be counter-productive on the speech quality.
 <!-- Define the bibtex sources -->
 <bibtex src="publis.bib"></bibtex>
 
+<!-- Search Bar -->
 <div class="bibtex_search_bar">
+  <button type="button" class="btn btn-default" onclick="reset()">Reset</button>
   <select class="bibtex_search bibtex_generate_author" extra="first" search="author">
     <option value="">Search First Author</option>
   </select>
@@ -347,9 +350,11 @@ modeling and could be counter-productive on the speech quality.
   <select class="bibtex_search bibtex_generate_year" search="year">
     <option value="">Search year</option>
   </select>
+  <input type="text" class="bibtex_search form-control" id="searchbar" placeholder="Search publications">
 </div>
 
 
+<!-- Publication entry point -->
 <div class="bibtex_structure">
   <div class="group year" extra="DESC number">
     <h3 class="publi_section title" id="journal"></h3>
@@ -361,14 +366,12 @@ modeling and could be counter-productive on the speech quality.
 
 <!-- Define template for one item -->
 <div class="bibtex_template">
-
   <!-- Reference formatting -->
   <div class="reference">
     <div class="content">
       <span class="author" max="5" style="font-weight: bold;"></span>,
       <span class="if title">"<span class="title"></span>",</span>
       <span class="if chapter">"<span class="chapter"></span>",</span>
-
       <span class="if journal">in <it><span class="journal"></span></it>,</span>
       <span class="if publisher"><em><span class="publisher"></span></em>,</span>
       <span class="if booktitle">in <em><span class="booktitle"></span></em>,</span>
@@ -414,7 +417,7 @@ modeling and could be counter-productive on the speech quality.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Sébastien Le Maguer</p>
-<p class="date">Created: 2021-05-30 Sun 10:13</p>
+<p class="date">Created: 2021-05-30 Sun 12:06</p>
 <p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 28.0.50 (<a href="https://orgmode.org">Org</a> mode 9.4.6)</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
