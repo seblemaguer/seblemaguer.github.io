@@ -184,21 +184,22 @@ textarea {
 
 pre {
   border: 0;
-  box-shadow: 5px 8px 8px #9d9d9d;
+  box-shadow: 5px 5px 8px #9d9d9d;
+  width: 95%;
   background-color: #f8f8f8;
 }
 
 pre.example {
   overflow: auto;
   display: block;
-  margin: 5px 5px 5px 5px;
+  margin: auto;
   padding: 5px 1px 5px 1%;
   border-left: 5px solid #5f9ea0;
 }
 
 pre.src {
   padding: 5px 1px 5px 1%;
-  margin: 5px 5px 5px 5px;
+  margin: auto;
   border-left: 5px solid #527d9a;
 }
 
@@ -276,6 +277,7 @@ span.org-rainbow-delimiters-depth-8 {
   border-radius: 3px;
   background-clip: padding-box;
   color: #333;
+  width: 95%;
 }
 
 .org-src-container {
