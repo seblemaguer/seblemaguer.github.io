@@ -8,15 +8,8 @@
  **                                                                                                    **
  ********************************************************************************************************/
 
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/static/css/notes.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* use normalize.css instead of reset
-   http://stackoverflow.com/a/8357635/114833 */
-/* @import "compass/reset"; */
 @import "https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Source+Code+Pro|Source+Sans+Pro:700,700i";
-/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -192,14 +185,8 @@ textarea {
 pre {
   border: 0;
   box-shadow: 5px 8px 8px #9d9d9d;
+  background-color: #f8f8f8;
 }
-
-/* pre.example:before { */
-/*     content: "Properties"; */
-/*     display: block; */
-/*     border-bottom: 1px dotted; */
-/*     margin-bottom: 1em; */
-/* } */
 
 pre.example {
   overflow: auto;
@@ -207,10 +194,6 @@ pre.example {
   margin: 5px 5px 5px 5px;
   padding: 5px 1px 5px 1%;
   border-left: 5px solid #5f9ea0;
-}
-
-pre {
-  background-color: #f8f8f8;
 }
 
 pre.src {
@@ -539,6 +522,27 @@ blockquote {
   padding: 0;
   padding-left: 3%;
   border-left: 5px solid #ea4c89;
+}
+
+.warning {
+  border: 0;
+  box-shadow: 5px 5px 8px #9d9d9d;
+  background-color: #feefb3;
+  overflow: auto;
+  display: block;
+  margin: auto;
+  padding: 5px 1px 5px 1%;
+  border-left: 5px solid #ff6f00;
+  border-bottom-left-radius: 8px;
+  border-radius: 3px;
+  width: 95%;
+  background-clip: padding-box;
+}
+
+.warning p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 body {
