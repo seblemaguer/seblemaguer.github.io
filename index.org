@@ -213,6 +213,7 @@ modeling and could be counter-productive on the speech quality.
 :CUSTOM_ID: sec:epe
 :END:
 - [[https://podtail.com/podcast/adapt-radio/sebastien-le-maguer-pronunciation-and-accents-in-h/][ADAPT Radio (2019) - Overview of my research]]
+- [[https://www.csdisseminate.com/][Collaborator of CSDisseminate (Since 2021)]]
 
 * Publications
 :PROPERTIES:
