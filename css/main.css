@@ -545,8 +545,8 @@ blockquote {
 
 body {
   font-family: Lora, Palatino, Georgia, serif;
-  width: 92%;
-  max-width: 1024px;
+  width: 80%;
+  /* max-width: 1024px; */
   margin: 0 auto;
   background-color: #f8f8f8;
 }

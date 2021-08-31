@@ -93,9 +93,9 @@ I did my PhD on parametric speech synthesis evaluation at IRISA/Université de R
 :END:
 
 #+ATTR_HTML: :style overflow-x:auto;
-| Year  | Description     | team/group                            | Place            | Supervisor        |
-|-------+-----------------+---------------------------------------+------------------+-------------------|
-| *10/18* | Research fellow | ADAPT Centre - Trinity College Dublin | Dublin - Ireland | Prof. Naomi Harte |
+| Year  | Description                     | team/group                                                | Place            | Supervisor        |
+|-------+---------------------------------+-----------------------------------------------------------+------------------+-------------------|
+| *10/18* | Post-Doctoral - Research Fellow | ADAPT Centre - Trinity College Dublin (IRC Grant, ADAPT2) | Dublin - Ireland | Prof. Naomi Harte |
 
 ** Past research experience
 :PROPERTIES:
@@ -104,10 +104,10 @@ I did my PhD on parametric speech synthesis evaluation at IRISA/Université de R
 
 | Year          | Description        | team/group                      | Place                 | Supervisor(s)                             |
 |---------------+--------------------+---------------------------------+-----------------------+-------------------------------------------|
-| *10/14 - 09/18* | Post-Doc           | MSP group - Saarland University | Saarbrücken - Germany | Dr. Ingmar Steiner                        |
-| *02/14 - 09/14* | Post-Doc           | LINKMEDIA - INRIA               | Rennes - France       | Dr. Vincent Claveau                       |
-| *09/13 - 12/13* | Post-Doc           | CORDIAL - IRISA                 | Lannion - France      | Dr. Damien Lolive / Dr. Nelly Barbot      |
-| *09/11 - 08/13* | Research Assistant | CORDIAL - IRISA                 | Lannion - France      | Prof. Olivier Boëffard / Dr. Nelly Barbot |
+| *10/14 - 09/18* | Post-Doctoral      | MSP group - Saarland University | Saarbrücken - Germany | Dr. Ingmar Steiner                        |
+| *02/14 - 09/14* | Post-Doctoral      | LINKMEDIA - INRIA               | Rennes - France       | Dr. Vincent Claveau                       |
+| *09/13 - 12/13* | Post-Doctoral      | CORDIAL - IRISA                 | Lannion - France      | Dr. Damien Lolive / Dr. Nelly Barbot      |
+| *09/11 - 08/13* | Research Engineer  | CORDIAL - IRISA                 | Lannion - France      | Prof. Olivier Boëffard / Dr. Nelly Barbot |
 | *10/08 - 07/13* | PhD                | CORDIAL - IRISA                 | Lannion - France      | Prof. Olivier Boëffard / Dr. Nelly Barbot |
 
 ** PhD
