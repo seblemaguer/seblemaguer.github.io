@@ -69,12 +69,13 @@ In the past, I was a postdoctoral researcher at Saarland University/DFKI (German
 at INRIA/IRISA in Rennes (France) where I worked on information retrieval with an application on medical context.
 I did my PhD on parametric speech synthesis evaluation at IRISA/Université de Rennes 1.
 
-** Activites
+** Activities
 :PROPERTIES:
 :CUSTOM_ID: sec:activities
 :END:
-- Help to the organization of the [[https://synsig.org/index.php/Blizzard_Challenge][Blizzard challenge]] (2017 - )
 - Co-chair of [[https://synsig.org/index.php/Main_Page][SynSIG]] with [[https://researchmap.jp/read0205283][Prof. Junichi Yamagishi]] (2017 - 2021)
+- Co-organizer of [[https://ssw10.oeaw.ac.at/][SSW10]], [[https://www.hte.hu/en/web/ssw11/][SSW11]], [[http://diss2021.fr/][DiSS 2021]], [[https://sites.google.com/view/robo-identity2/home][HRI RoboIdentity 2022]]
+- Help to the organization of the [[https://synsig.org/index.php/Blizzard_Challenge][Blizzard challenge]] (2017 - )
 - [[http://simphon.net][SimPhon.Net network]] (2017 - 2021)
 
 ** Membership
@@ -212,8 +213,9 @@ modeling and could be counter-productive on the speech quality.
 :PROPERTIES:
 :CUSTOM_ID: sec:epe
 :END:
+- Natural Language Processing group Belarus Podcast (2016) - General Talk about speech synthesis - [[https://nlproc.by/post/139255678845/sebastienlemaguer1][Part 1]], [[https://nlproc.by/post/139355359840/sebastienlemaguer2][Part2]]
 - [[https://podtail.com/podcast/adapt-radio/sebastien-le-maguer-pronunciation-and-accents-in-h/][ADAPT Radio (2019) - Overview of my research]]
-- [[https://www.csdisseminate.com/][Collaborator of CSDisseminate (Since 2021)]]
+- [[https://www.csdisseminate.com/][Collaborator of CSDisseminate (2021)]]
 
 * Publications
 :PROPERTIES:
