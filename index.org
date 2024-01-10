@@ -33,14 +33,9 @@
 #+ATTR_HTML: :width 200px
 [[./images/slm.jpg]]
 
-Adapt Centre / Trinity College Dublin \\
-Dept. of Electronic & Electrical Engineering \\
-Stack B, Custom House Quay \\
-Dublin 1 -  Ireland \\
-
 #+begin_export html
 <i class="fa fa-envelope" style="font-size:20px"></i>
-<a href="mailto:lemagues_[at]_tcd_[dot]_ie">lemagues [at] tcd [dot] ie</a> <br />
+<a href="mailto:lemagues_[at]_tcd_[dot]_ie">sebastien.lemaguer [at] helsinki [dot] fi</a> <br />
 <img src="./images/icons/github.svg" width="20" alt="github">
 <a href="https://github.com/seblemaguer/">https://github.com/seblemaguer/</a>
 <br />
@@ -62,14 +57,15 @@ Dublin 1 -  Ireland \\
 :PROPERTIES:
 :CUSTOM_ID: sec:global-information
 :END:
-I am currently a Research Fellow in the [[https://www.mee.tcd.ie/~sigmedia/][SIGMEDIA]] at the [[https://www.tcd.ie/][Trinity College Dublin (TCD)]] in the [[https://www.adaptcentre.ie/][ADAPT Centre]].
+I am currently a postdoctoral researcher in the department of Digital Humanities of the University of Helsinki.
 I am currently funded by the GOIPD scheme from the [[http://research.ie/][Irish Research Council (IRC)]].
 
 My research is centred around a fundamental question: what is natural speech?
 To conduct my research, I am currently focusing my work around two axes:
 speech synthesis evaluation/analysis and analyzing stuttering speech.
 
-In the past, I was a postdoctoral researcher at Saarland University/DFKI (Germany) where I worked on integration and evaluation of the influence of information density features in speech synthesis;
+In the past, I was a postdoctoral researcher and researcher fellow in the [[https://www.mee.tcd.ie/~sigmedia/][SIGMEDIA]] at the [[https://www.tcd.ie/][Trinity College Dublin (TCD)]] in the [[https://www.adaptcentre.ie/][ADAPT Centre]] where I worked on speech synthesis evaluation.
+I was a postdoctoral researcher at Saarland University/DFKI (Germany) where I worked on integration and evaluation of the influence of information density features in speech synthesis;
 at INRIA/IRISA in Rennes (France) where I worked on information retrieval with an application on medical context.
 I did my PhD on parametric speech synthesis evaluation at IRISA/Université de Rennes 1.
 
@@ -98,22 +94,23 @@ I did my PhD on parametric speech synthesis evaluation at IRISA/Université de R
 :END:
 
 #+ATTR_HTML: :style overflow-x:auto;
-| Year  | Description                     | team/group                                                | Place            | Supervisor        |
-|-------+---------------------------------+-----------------------------------------------------------+------------------+-------------------|
-| *10/18* | Post-Doctoral - Research Fellow | ADAPT Centre - Trinity College Dublin (IRC Grant, ADAPT2) | Dublin - Ireland | Prof. Naomi Harte |
+| Year  | Description   | Lab                                         | Place              |
+|-------+---------------+---------------------------------------------+--------------------|
+| *01/24* | Post-Doctoral | Digital Humanities - University of Helsinki | Helsinki - Finland |
 
 ** Past research experience
 :PROPERTIES:
 :CUSTOM_ID: sec:research-experience
 :END:
 
-| Year          | Description        | team/group                      | Place                 | Supervisor(s)                             |
-|---------------+--------------------+---------------------------------+-----------------------+-------------------------------------------|
-| *10/14 - 09/18* | Post-Doctoral      | MSP group - Saarland University | Saarbrücken - Germany | Dr. Ingmar Steiner                        |
-| *02/14 - 09/14* | Post-Doctoral      | LINKMEDIA - INRIA               | Rennes - France       | Dr. Vincent Claveau                       |
-| *09/13 - 12/13* | Post-Doctoral      | CORDIAL - IRISA                 | Lannion - France      | Dr. Damien Lolive / Dr. Nelly Barbot      |
-| *09/11 - 08/13* | Research Engineer  | CORDIAL - IRISA                 | Lannion - France      | Prof. Olivier Boëffard / Dr. Nelly Barbot |
-| *10/08 - 07/13* | PhD                | CORDIAL - IRISA                 | Lannion - France      | Prof. Olivier Boëffard / Dr. Nelly Barbot |
+| Year          | Description                     | team/group                                                | Place                 |
+|---------------+---------------------------------+-----------------------------------------------------------+-----------------------|
+| *10/18 - 12/23* | Post-Doctoral - Research Fellow | ADAPT Centre - Trinity College Dublin (IRC Grant, ADAPT2) | Dublin - Ireland      |
+| *10/14 - 09/18* | Post-Doctoral                   | MSP group - Saarland University                           | Saarbrücken - Germany |
+| *02/14 - 09/14* | Post-Doctoral                   | LINKMEDIA - INRIA                                         | Rennes - France       |
+| *09/13 - 12/13* | Post-Doctoral                   | CORDIAL - IRISA                                           | Lannion - France      |
+| *09/11 - 08/13* | Research Engineer               | CORDIAL - IRISA                                           | Lannion - France      |
+| *10/08 - 07/13* | PhD                             | CORDIAL - IRISA                                           | Lannion - France      |
 
 ** PhD
 :PROPERTIES:
