@@ -1,10 +1,10 @@
-#+TITLE: Sébastien Le Maguer - Research fellow
+#+TITLE: Sébastien Le Maguer
 #+AUTHOR: Sébastien Le Maguer
-#+EMAIL: lemagues@tcd.ie
+#+EMAIL: sebastien.lemaguer@helsinki.fi
 #+OPTIONS: ':t *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline author:t c:nil
 #+OPTIONS: creator:comment d:(not LOGBOOK) date:t e:t email:nil f:t inline:t
-#+OPTIONS: num:t p:nil pri:nil stat:t tags:t tasks:t tex:t timestamp:t
-#+OPTIONS: toc:t
+#+OPTIONS: num:nil p:nil pri:nil stat:t tags:t tasks:t tex:t timestamp:t
+#+OPTIONS: toc:nil
 #+OPTIONS: todo:t |:t
 #+SELECT_TAGS: export
 #+EXCLUDE_TAGS: noexport
@@ -16,6 +16,7 @@
 #+HTML_HEAD: <meta name="viewport" content="width=device-width, initial-scale=1">
 
 # == Scripts
+#+HTML_HEAD: <script src="lib/default.js"></script>
 #+HTML_HEAD: <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 #+HTML_HEAD: <script type="text/javascript" src="lib/bibtex_js.js"></script>
 #+HTML_HEAD: <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
@@ -26,43 +27,72 @@
 #+HTML_HEAD: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 #+HTML_HEAD: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/main.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/banner.css" />
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/biblio.css" />
 
 # =================================================================================================================================
 
+#+HTML: <div class="banner">
+#+HTML: <div class="photo">
 #+ATTR_HTML: :width 200px
 [[./images/slm.jpg]]
+#+HTML: </div>
 
+#+HTML: <div class="contact">
 #+begin_export html
-<i class="fa fa-envelope" style="font-size:20px"></i>
-<a href="mailto:lemagues_[at]_tcd_[dot]_ie">sebastien.lemaguer [at] helsinki [dot] fi</a> <br />
-<img src="./images/icons/github.svg" width="20" alt="github">
-<a href="https://github.com/seblemaguer/">https://github.com/seblemaguer/</a>
-<br />
+<ul style="list-style: none; padding: 0; margin: 0;">
 
-<img src="./images/icons/linkedin.svg" width="20" alt="linkedin"/>
-<a href="https://www.linkedin.com/in/sébastien-le-maguer-004b095">https://www.linkedin.com/in/sébastien-le-maguer-004b095</a><br />
+  <!-- Email -->
+  <li style="margin-bottom: 8px;">
+    <i class="fa fa-envelope" style="font-size: 1.25rem; vertical-align: middle;"></i>
+    <a href="mailto:sebastien.lemaguer [at] helsinki [dot] fi">sebastien.lemaguer [at] helsinki [dot] fi</a>
+  </li>
 
-<img src="./images/icons/researchgate.svg" width="20" alt="researchgate"/>
-<a href="https://www.researchgate.net/profile/Sebastien_Le_Maguer">https://www.researchgate.net/profile/Sebastien_Le_Maguer</a><br />
+  <!-- GitHub -->
+  <li style="margin-bottom: 8px;">
+    <img src="./images/icons/github.svg" alt="GitHub icon" style="width: 1.25rem; vertical-align: middle;">
+    <a href="https://github.com/seblemaguer/">github.com/seblemaguer</a>
+  </li>
 
-<img src="./images/icons/orcid.svg" width="20" alt="researchgate"/>
-<a href="https://orcid.org/0000-0003-0407-8318">https://orcid.org/0000-0003-0407-8318</a><br />
+  <!-- LinkedIn -->
+  <li style="margin-bottom: 8px;">
+    <img src="./images/icons/linkedin.svg" alt="LinkedIn icon" style="width: 1.25rem; vertical-align: middle;">
+    <a href="https://www.linkedin.com/in/sébastien-le-maguer-004b095">linkedin.com/in/sébastien-le-maguer</a>
+  </li>
 
-<img src="./images/icons/emacs.svg" width="20" alt="emacs"/>
-<a href="https://github.com/seblemaguer/dotfiles">My configuration</a><br />
+  <!-- ResearchGate -->
+  <li style="margin-bottom: 8px;">
+    <img src="./images/icons/researchgate.svg" alt="ResearchGate icon" style="width: 1.25rem; vertical-align: middle;">
+    <a href="https://www.researchgate.net/profile/Sebastien_Le_Maguer">researchgate.net/profile/Sebastien_Le_Maguer</a>
+  </li>
+
+  <!-- ORCID -->
+  <li style="margin-bottom: 8px;">
+    <img src="./images/icons/orcid.svg" alt="ORCID icon" style="width: 1.25rem; vertical-align: middle;">
+    <a href="https://orcid.org/0000-0003-0407-8318">orcid.org/0000-0003-0407-8318</a>
+  </li>
+
+  <!-- Emacs Configuration -->
+  <li style="margin-bottom: 8px;">
+    <img src="./images/icons/emacs.svg" alt="Emacs icon" style="width: 1.25rem; vertical-align: middle;">
+    <a href="https://github.com/seblemaguer/dotfiles">My Emacs configuration</a>
+  </li>
+
+</ul>
 #+end_export
 
-* Global information
+#+HTML: </div>
+#+HTML: </div>
+
+* Overview
 :PROPERTIES:
 :CUSTOM_ID: sec:global-information
 :END:
 I am currently a postdoctoral researcher in the department of Digital Humanities of the University of Helsinki.
-I am currently funded by the GOIPD scheme from the [[http://research.ie/][Irish Research Council (IRC)]].
 
-My research is centred around a fundamental question: what is natural speech?
-To conduct my research, I am currently focusing my work around two axes:
-speech synthesis evaluation/analysis and analyzing stuttering speech.
+My research is centred around a fundamental question:@@html: <span class="highlight-text">@@what is a *good* synthetic speech?@@html: </span>@@
+While my research was initially in computer science, addressing this question have led me to explore a more cross-disciplinary approach.
+Nowadays, my research is at the crossroad of (obviously) *speech science* and *speech technology*, but I also explore other fields such as *HRI/HCI*, *auditory modelling* and lately *political science*, *ethics* and (hopefully soon) *sound-design*.
 
 In the past, I was a postdoctoral researcher and researcher fellow in the [[https://www.mee.tcd.ie/~sigmedia/][SIGMEDIA]] at the [[https://www.tcd.ie/][Trinity College Dublin (TCD)]] in the [[https://www.adaptcentre.ie/][ADAPT Centre]] where I worked on speech synthesis evaluation.
 I was a postdoctoral researcher at Saarland University/DFKI (Germany) where I worked on integration and evaluation of the influence of information density features in speech synthesis;
@@ -84,7 +114,7 @@ I did my PhD on parametric speech synthesis evaluation at IRISA/Université de R
 :END:
 - Member of ISCA (2009 - )
 
-* Research career
+* Research career & Activities
 :PROPERTIES:
 :CUSTOM_ID: sec:research
 :END:
@@ -96,21 +126,21 @@ I did my PhD on parametric speech synthesis evaluation at IRISA/Université de R
 #+ATTR_HTML: :style overflow-x:auto;
 | Year  | Description   | Lab                                         | Place              |
 |-------+---------------+---------------------------------------------+--------------------|
-| *01/24* | Post-Doctoral | Digital Humanities - University of Helsinki | Helsinki - Finland |
+| *01/24* | Post-Doctoral Researcher | Digital Humanities - University of Helsinki | Helsinki - Finland |
 
 ** Past research experience
 :PROPERTIES:
 :CUSTOM_ID: sec:research-experience
 :END:
 
-| Year          | Description                     | team/group                                                | Place                 |
-|---------------+---------------------------------+-----------------------------------------------------------+-----------------------|
-| *10/18 - 12/23* | Post-Doctoral - Research Fellow | ADAPT Centre - Trinity College Dublin (IRC Grant, ADAPT2) | Dublin - Ireland      |
-| *10/14 - 09/18* | Post-Doctoral                   | MSP group - Saarland University                           | Saarbrücken - Germany |
-| *02/14 - 09/14* | Post-Doctoral                   | LINKMEDIA - INRIA                                         | Rennes - France       |
-| *09/13 - 12/13* | Post-Doctoral                   | CORDIAL - IRISA                                           | Lannion - France      |
-| *09/11 - 08/13* | Research Engineer               | CORDIAL - IRISA                                           | Lannion - France      |
-| *10/08 - 07/13* | PhD                             | CORDIAL - IRISA                                           | Lannion - France      |
+| Year          | Description                                | team/group                                                | Place                 |
+|---------------+--------------------------------------------+-----------------------------------------------------------+-----------------------|
+| *10/18 - 12/23* | Post-Doctoral Researcher - Research Fellow | ADAPT Centre - Trinity College Dublin (IRC Grant, ADAPT2) | Dublin - Ireland      |
+| *10/14 - 09/18* | Post-Doctoral Researcher                   | MSP group - Saarland University                           | Saarbrücken - Germany |
+| *02/14 - 09/14* | Post-Doctoral Researcher                   | LINKMEDIA - INRIA                                         | Rennes - France       |
+| *09/13 - 12/13* | Post-Doctoral Researcher                   | CORDIAL - IRISA                                           | Lannion - France      |
+| *09/11 - 08/13* | Research Engineer                          | CORDIAL - IRISA                                           | Lannion - France      |
+| *10/08 - 07/13* | PhD                                        | CORDIAL - IRISA                                           | Lannion - France      |
 
 ** PhD
 :PROPERTIES:
@@ -141,7 +171,11 @@ modeling and could be counter-productive on the speech quality.
 :PROPERTIES:
 :CUSTOM_ID: sec:comment-teaching
 :END:
-** Current (2017-2018)
+** COMMENT Previous
+:PROPERTIES:
+:CUSTOM_ID: sec:previous
+:END:
+*** (2017-2018)
 :PROPERTIES:
 :CUSTOM_ID: sec:current-20172018
 :END:
@@ -150,10 +184,6 @@ modeling and could be counter-productive on the speech quality.
 | Statistical speech synthesis | A brief introduction to parametrical/statistical speech synthesis     | [[file:teaching/2017-2018/PTTS_lecture/index.html][slides]] ([[file:teaching/2017-2018/PTTS_lecture/ptts_lecture.pdf][pdf]]) |
 | TTS Evaluation               | A brief overview of text to speech synthesis evaluation methodologies | [[file:teaching/2017-2018/tts_evaluation/index.html][slides]] ([[file:teaching/2017-2018/tts_evaluation/tts_evaluation.pdf][pdf]]) |
 
-** Previous
-:PROPERTIES:
-:CUSTOM_ID: sec:previous
-:END:
 *** 2016-2017
 :PROPERTIES:
 :CUSTOM_ID: sec:20162017
@@ -224,12 +254,3 @@ modeling and could be counter-productive on the speech quality.
 :END:
 
 #+INCLUDE: "templates/publis.html" export html
-
-* COMMENT configurations
-:PROPERTIES:
-:CUSTOM_ID: sec:comment-configurations
-:END:
-
-# local variables:
-# org-export-html-style: ""
-# end:

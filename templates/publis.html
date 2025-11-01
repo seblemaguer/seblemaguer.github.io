@@ -3,80 +3,100 @@
 
 <!-- Search Bar -->
 <div class="bibtex_search_bar">
-  <button type="button" class="btn btn-default" onclick="reset()">Reset</button>
-  <select class="bibtex_search bibtex_generate_author" extra="first" search="author">
-    <option value="">Search First Author</option>
-  </select>
-  <select class="bibtex_search bibtex_generate_author" search="author">
-    <option value="">Search author</option>
-  </select>
-  <select class="bibtex_search bibtex_generate_year" search="year">
-    <option value="">Search year</option>
-  </select>
-  <input type="text" class="bibtex_search form-control" id="searchbar" placeholder="Search publications">
+    <button type="button" class="btn btn-default" onclick="reset()">Reset</button>
+    <select class="bibtex_search bibtex_generate_author" extra="first" search="author">
+        <option value="">Search First Author</option>
+    </select>
+    <select class="bibtex_search bibtex_generate_author" search="author">
+        <option value="">Search author</option>
+    </select>
+    <select class="bibtex_search bibtex_generate_year" search="year">
+        <option value="">Search year</option>
+    </select>
+    <input type="text" class="bibtex_search form-control" id="searchbar" placeholder="Search publications">
 </div>
 
 
 <!-- Publication entry point -->
 <div class="bibtex_structure">
-  <div class="group year" extra="DESC number">
-    <h3 class="publi_section title" id="journal"></h3>
-    <div class="section_content">
-      <div class="templates"></div>
+    <div class="sections bibtextypekey">
+        <div class="section article">
+            <h3 class="publi_section_title">Journal Articles</h3>
+            <div class="sort year" extra="DESC number">
+                <div class="templates"></div>
+            </div>
+        </div>
+        <div class="section book">
+            <h3 class="publi_section_title">Books</h3>
+            <div class="sort year" extra="DESC number">
+                <div class="templates"></div>
+            </div>
+        </div>
+        <div class="section inproceedings">
+            <h3 class="publi_section_title">Conference and Workshop Papers</h3>
+            <div class="sort year" extra="DESC number">
+                <div class="templates"></div>
+            </div>
+        </div>
+        <div class="section misc|phdthesis|mastersthesis|bachelorsthesis|techreport">
+            <h3 class="publi_section_title">Other Publications</h3>
+            <div class="sort year" extra="DESC number">
+                <div class="templates"></div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 <!-- Define template for one item -->
 <div class="bibtex_template">
-  <!-- Reference formatting -->
-  <div class="reference">
-    <div class="content">
-      <span class="author" max="5" style="font-weight: bold;"></span>,
-      <span class="if title">"<span class="title"></span>",</span>
-      <span class="if chapter">"<span class="chapter"></span>",</span>
-      <span class="if journal">in <it><span class="journal"></span></it>,</span>
-      <span class="if publisher"><em><span class="publisher"></span></em>,</span>
-      <span class="if booktitle">in <em><span class="booktitle"></span></em>,</span>
-      <span class="if address"><span class="address"></span>,</span>
-      <span class="if month"><span class="month"></span>,</span>
-      <span class="if year"><span class="year"></span>.</span>
-    </div>
+    <!-- Reference formatting -->
+    <div class="reference">
+        <div class="content">
+            <span class="author" max="5" style="font-weight: bold;"></span>,
+            <span class="if title">"<span class="title"></span>",</span>
+            <span class="if chapter">"<span class="chapter"></span>",</span>
+            <span class="if journal">in <it><span class="journal"></span></it>,</span>
+            <span class="if publisher"><em><span class="publisher"></span></em>,</span>
+            <span class="if booktitle">in <em><span class="booktitle"></span></em>,</span>
+            <span class="if address"><span class="address"></span>,</span>
+            <span class="if month"><span class="month"></span>,</span>
+            <span class="if year"><span class="year"></span>.</span>
+        </div>
 
-    <!-- Access bar -->
-    <div class="access_bar">
-      <a class="bibtexVar btn" href="#+BIBTEXKEY+" extra="BIBTEXKEY" rel="modal:open">
-        <span class="iconify" data-icon="zondicons:book-reference" data-inline="false"></span>
-      </a>
-      <span class="if url">
-        <a class="url bibtex_url"  target="_blank">
-          <span class="iconify" data-icon="il:url" data-inline="false"></span>
-        </a>
-      </span>
-      <span class="if pdf">
-        <a class="bibtexVar"  href="+PDF+" extra="pdf" target="_blank">
-          <span class="iconify" data-icon="carbon:generate-pdf" data-inline="false"></span>
-        </a>
-      </span>
-      <span class="if doi">
-        <a class="bibtexVar"  href="http://dx.doi.org/+DOI+" extra="doi" target="_blank">
-          <span class="iconify" data-icon="ion:earth" data-inline="false"></span>
-        </a>
-      </span>
-      <span class="if demo">
-        <a class="bibtexVar"  href="+DEMO+" extra="demo" target="_blank">
-          <span class="iconify" data-icon="ion:logo-github" data-inline="false"></span>
-        </a>
-      </span>
-    </div>
+        <!-- Access bar -->
+        <div class="access_bar">
+            <a class="bibtexVar btn" href="#+BIBTEXKEY+" extra="BIBTEXKEY" rel="modal:open">
+                <span class="iconify" data-icon="zondicons:book-reference" data-inline="false"></span>
+            </a>
+            <span class="if url">
+                <a class="url bibtex_url"  target="_blank">
+                    <span class="iconify" data-icon="il:url" data-inline="false"></span>
+                </a>
+            </span>
+            <span class="if pdf">
+                <a class="bibtexVar"  href="+PDF+" extra="pdf" target="_blank">
+                    <span class="iconify" data-icon="carbon:generate-pdf" data-inline="false"></span>
+                </a>
+            </span>
+            <span class="if doi">
+                <a class="bibtexVar"  href="http://dx.doi.org/+DOI+" extra="doi" target="_blank">
+                    <span class="iconify" data-icon="ion:earth" data-inline="false"></span>
+                </a>
+            </span>
+            <span class="if demo">
+                <a class="bibtexVar"  href="+DEMO+" extra="demo" target="_blank">
+                    <span class="iconify" data-icon="ion:logo-github" data-inline="false"></span>
+                </a>
+            </span>
+        </div>
 
-    <div class="bibtexVar bibtex_modal modal" id="+BIBTEXKEY+" extra="BIBTEXKEY">
-      <pre class="src src-bibtex"><span class="bibtexraw noread"></span></pre>
+        <div class="bibtexVar bibtex_modal modal" id="+BIBTEXKEY+" extra="BIBTEXKEY">
+            <pre class="src src-bibtex"><span class="bibtexraw noread"></span></pre>
+        </div>
     </div>
-  </div>
 </div>
 
 <!-- Display bibliography -->
 <div id="content">
-  <div id="bibtex_display"></div>
+    <div id="bibtex_display"></div>
 </div>

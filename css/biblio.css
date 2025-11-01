@@ -6,14 +6,34 @@
 /* Bibtex item */
 .bibtexentry {
     margin-top: 0.2em;
-    margin-bottom: 02em;
+    margin-bottom: 0.5em;
 }
 
 .iconify {
-    font-size: 18px;
-    line-height: 24px;
+    line-height: 30px;
+}
+
+.access_bar {
+    margin-top: 5px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items:center; */
 }
 
 .modal{
     max-width: 90%;
+}
+
+.publi_section_title {
+    text-align: center;
+}
+/* underline with custom width */
+.publi_section_title::after {
+    content: "";
+    display: block;
+    height: 2px;                        /* thickness of underline */
+    width: 80%;                         /* default: same as text width */
+    background-color: var(--main-color); /* underline color */
+    margin: 0.3rem auto 0 auto;          /* spacing below text, centered */
+    border-radius: 1px;                  /* subtle rounding */
 }

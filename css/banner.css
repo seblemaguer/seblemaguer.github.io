@@ -1,0 +1,62 @@
+/* Banner container */
+.banner {
+  display: flex;                 /* side-by-side layout */
+  align-items: center;           /* vertically center items */
+  justify-content: flex-start;   /* align content naturally */
+  padding: 0rem 5rem 0em 5rem;                 /* 1rem extra space around content */
+  margin: 2rem auto;             /* center horizontally with some vertical spacing */
+  background-color: var(--very-light-background-color);     /* optional background */
+  border-radius: 10px;           /* optional rounded corners */
+  border: 2px solid var(--main-color);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* optional shadow */
+  width: fit-content;            /* shrink-wrap the content */
+  box-sizing: border-box;        /* include padding in width */
+}
+
+/* Photo section */
+.banner .photo {
+  flex: 0 0 auto;                /* do not stretch */
+}
+
+/* Contact section */
+.banner .contact {
+  flex: 1;                        /* take remaining space if needed */
+  margin-left: 4rem;              /* small gap from photo */
+}
+
+/* Contact list styling */
+.banner .contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.banner .contact li {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.banner .contact img,
+.banner .contact i {
+  margin-right: 0.5rem;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;   /* stack photo and contact on smaller screens */
+    align-items: center;
+  }
+
+  .banner .contact {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .banner .contact li {
+    justify-content: center;
+  }
+}
