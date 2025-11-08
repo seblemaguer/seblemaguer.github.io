@@ -1,0 +1,48 @@
+/* === Print Styles === */
+@media print {
+
+  /* Let the page spread out */
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  #content {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Hide interactive UI */
+  .tab-bar,
+  .tab-bar button,
+  /* .outline-3 > .header, */
+  #postamble {
+     display: none !important;
+  }
+
+  h2 {
+      display: block;
+      font-size: 1.4rem;
+      text-align: center;
+      color: var(--text-color);
+      border-bottom: 4px solid var(--main-color);
+      border-radius: 0.6rem;
+      padding: 0.6rem 1rem;
+      margin: .5rem auto 1rem auto;
+      width: 80%;
+      font-weight: 600;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  /* Always show all tab content */
+  .tab-content {
+      display: block !important;
+      break-after: page;
+  }
+
+  /* Always open collapsible sections */
+  .outline-3 > .content {
+    display: block !important;
+  }
+}
