@@ -357,6 +357,33 @@ a:hover {
 /*********************************************************************************
  ** Source code
  *********************************************************************************/
+blockquote {
+  font-style: italic;
+  padding: 1.2rem 1.5rem;
+  margin: 1.5rem 0;
+  border-left: 4px solid #4a90e2;
+  background: #f7faff;
+  color: #333;
+  position: relative;
+}
+
+blockquote::before {
+  content: "“";
+  font-size: 3rem;
+  color: #4a90e2;
+  position: absolute;
+  left: 10px;
+  top: -10px;
+  line-height: 1;
+}
+
+blockquote footer {
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  color: #666;
+  text-align: right;
+}
+
 pre {
   border: 0;
   box-shadow: 0.2rem 0.2rem 0.3rem var(--code-shadow);
