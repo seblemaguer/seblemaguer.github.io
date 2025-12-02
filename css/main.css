@@ -362,6 +362,9 @@ pre {
   box-shadow: 0.2rem 0.2rem 0.3rem var(--code-shadow);
   background-color: var(--white);
   border-radius: 0.4rem;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto
 }
 pre.example {
   overflow: auto;
